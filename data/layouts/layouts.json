@@ -4410,6 +4410,56 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIBBUTZ",
+      "name": "Kibbutz_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Kibbutz/border.bin",
+      "blockdata_filepath": "data/layouts/Kibbutz/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH1",
+      "name": "Kvish1_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Kvish1/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV",
+      "name": "TelAviv_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/TelAviv/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACH",
+      "name": "Beach_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Beach/border.bin",
+      "blockdata_filepath": "data/layouts/Beach/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAIFA",
+      "name": "Haifa_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Haifa/border.bin",
+      "blockdata_filepath": "data/layouts/Haifa/map.bin"
     }
   ]
 }
