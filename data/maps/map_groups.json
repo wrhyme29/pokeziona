@@ -102,6 +102,9 @@
     "Haifa",
     "Kvish2"
   ],
+  "gMapGroup_IndoorKibbutz": [
+    "Kibbutz_PlayerHouse"
+  ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
@@ -628,9 +631,6 @@
   ],
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
-  ],
-  "gMapGroup_IndoorKibbutz": [
-    "Kibbutz_PlayerHouse"
   ],
   "gMapGroup_IndoorTelAviv": [
     "TelAvivLab",
