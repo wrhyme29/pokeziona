@@ -1,6 +1,6 @@
-# Pokémon Emerald
+# Pokémon Ziona
 
-This is a decompilation of Pokémon Emerald.
+This is a ROM Hack based on the decompilation of Pokémon Emerald.
 
 It builds the following ROM:
 
