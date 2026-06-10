@@ -1069,6 +1069,8 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/Haifa/scripts.inc"
 
+	.include "data/maps/Kibbutz_PlayerHouse/scripts.inc"
+
 	.include "data/maps/Kvish2/scripts.inc"
 
 	.include "data/maps/TelAvivLab/scripts.inc"

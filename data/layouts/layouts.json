@@ -4462,6 +4462,16 @@
       "blockdata_filepath": "data/layouts/Haifa/map.bin"
     },
     {
+      "id": "LAYOUT_KIBBUTZ_PLAYER_HOUSE",
+      "name": "Kibbutz_PlayerHouse_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Kibbutz_PlayerHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Kibbutz_PlayerHouse/map.bin"
+    },
+    {
       "id": "LAYOUT_KVISH2",
       "name": "Kvish2_Layout",
       "width": 30,

@@ -49,6 +49,7 @@
 extern const u8 EventScript_ResetAllMapFlags[];
 
 static void ClearFrontierRecord(void);
+static void WarpToBedroom(void);
 static void WarpToTruck(void);
 static void ResetMiniGamesRecords(void);
 
@@ -130,6 +131,13 @@ static void WarpToTruck(void)
     WarpIntoMap();
 }
 
+static void WarpToBedroom(void)
+{
+    DebugPrintf("In WarpToBedroom");
+    SetWarpDestination(MAP_GROUP(MAP_KIBBUTZ_PLAYER_HOUSE), MAP_NUM(MAP_KIBBUTZ_PLAYER_HOUSE), WARP_ID_NONE, 2, 4);
+    WarpIntoMap();
+}
+
 void Sav2_ClearSetDefault(void)
 {
     ClearSav2();
@@ -192,7 +200,8 @@ void NewGameInitData(void)
     InitDewfordTrend();
     ResetFanClub();
     ResetLotteryCorner();
-    WarpToTruck();
+    // WarpToTruck();
+    WarpToBedroom();
     RunScriptImmediately(EventScript_ResetAllMapFlags);
     ResetMiniGamesRecords();
     InitUnionRoomChatRegisteredTexts();
