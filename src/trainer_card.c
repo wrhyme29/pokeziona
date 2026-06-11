@@ -21,6 +21,7 @@
 #include "gpu_regs.h"
 #include "international_string_util.h"
 #include "pokedex.h"
+#include "pokemon.h"
 #include "pokemon_icon.h"
 #include "graphics.h"
 #include "pokemon_icon.h"
@@ -94,6 +95,8 @@ struct TrainerCardData
 // EWRAM
 EWRAM_DATA struct TrainerCard gTrainerCards[4] = {0};
 EWRAM_DATA static struct TrainerCardData *sData = NULL;
+static EWRAM_DATA u8 SpriteIdData[PARTY_SIZE] = {0};
+static EWRAM_DATA u16 SpriteIdPalette[PARTY_SIZE] = {0};
 
 //this file's functions
 static void VblankCb_TrainerCard(void);
@@ -167,6 +170,8 @@ static bool8 Task_AnimateCardFlipUp(struct Task *task);
 static bool8 Task_EndCardFlip(struct Task *task);
 static void UpdateCardFlipRegs(u16);
 static void LoadMonIconGfx(void);
+static void UpdateTrainerCardMonIcons(void);
+static void DestroyTrainerCardMonIcons(void);
 
 static const u32 sTrainerCardStickers_Gfx[]      = INCGFX_U32("graphics/trainer_card/frlg/stickers.png", ".4bpp.lz");
 static const u16 sUnused_Pal[]                   = INCGFX_U16("graphics/trainer_card/unused.pal", ".gbapal");
@@ -465,6 +470,7 @@ static void Task_TrainerCard(u8 taskId)
     case STATE_WAIT_FLIP_TO_BACK:
         if (IsCardFlipTaskActive() && Overworld_IsRecvQueueAtMax() != TRUE)
         {
+            UpdateTrainerCardMonIcons();   
             PlaySE(SE_RG_CARD_OPEN);
             sData->mainState = STATE_HANDLE_INPUT_BACK;
         }
@@ -483,6 +489,7 @@ static void Task_TrainerCard(u8 taskId)
             }
             else
             {
+                DestroyTrainerCardMonIcons();
                 FlipTrainerCard();
                 sData->mainState = STATE_WAIT_FLIP_TO_FRONT;
                 PlaySE(SE_RG_CARD_FLIP);
@@ -973,8 +980,6 @@ static bool8 PrintAllOnCardBack(void)
         PrintContestStringOnCard();
         break;
     case 6:
-        PrintPokemonIconsOnCard();
-        PrintBattleFacilityStringOnCard();
         break;
     case 7:
         PrintStickersOnCard();
@@ -1898,5 +1903,38 @@ static void CreateTrainerCardTrainerPic(void)
                     sTrainerPicOffset[sData->isHoenn][sData->trainerCard.gender][1],
                     8,
                     WIN_TRAINER_PIC);
+    }
+}
+
+static void UpdateTrainerCardMonIcons(void)
+{
+    u16 species;
+    u8 i, x, y, animationNumber, distanceBetweenIcons, subpriority;
+
+    LoadMonIconPalettes();
+    x = 40;
+    y = 124;
+    subpriority = 1;
+    distanceBetweenIcons = 32;
+    animationNumber = 4;
+
+    for(i = 0; i < gPlayerPartyCount; i++, x += distanceBetweenIcons)
+    {
+        species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES);
+        SpriteIdData[i] = CreateMonIcon(species, SpriteCB_MonIcon, x, y, subpriority, GetMonData(&gPlayerParty[0], MON_DATA_PERSONALITY), TRUE);
+        gSprites[SpriteIdData[i]].oam.priority = 0;
+        StartSpriteAnim(&gSprites[SpriteIdData[i]], animationNumber);
+        SpriteIdPalette[i] = gMonIconPaletteIndices[species];
+        gSprites[SpriteIdData[i]].oam.paletteNum = SpriteIdPalette[i];
+    }
+}
+
+static void DestroyTrainerCardMonIcons(void)
+{
+    u8 i;
+    for (i = 0; i < gPlayerPartyCount; i++)
+    {
+        FreeAndDestroyMonIconSprite(&gSprites[SpriteIdData[i]]);
+        FreeMonIconPalettes;
     }
 }
