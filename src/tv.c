@@ -3,6 +3,7 @@
 #include "overworld.h"
 #include "random.h"
 #include "event_data.h"
+#include "evolution_scene.h"
 #include "fieldmap.h"
 #include "field_camera.h"
 #include "field_specials.h"
@@ -3300,8 +3301,23 @@ void ChangePokemonNickname(void)
 
 void ChangePokemonNickname_CB(void)
 {
-    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar2);
-    CB2_ReturnToFieldContinueScriptPlayMapMusic();
+    u16 evoTarget, partySlotId;
+    struct Pokemon *mon;
+
+    partySlotId = gSpecialVar_0x8004;
+    mon = &gPlayerParty[partySlotId];
+    GetMonData(mon, MON_DATA_NICKNAME, gStringVar3);
+    SetMonData(mon, MON_DATA_NICKNAME, gStringVar2);
+
+    evoTarget = GetEvolutionTargetSpecies(mon, EVO_MODE_RENAME, ITEM_NONE);
+    if (evoTarget != SPECIES_NONE)
+    {
+        gCB2_AfterEvolution = CB2_ReturnToFieldContinueScriptPlayMapMusic;
+        EvolutionScene(mon, evoTarget, TRUE, partySlotId);
+    } else
+    {
+        CB2_ReturnToFieldContinueScriptPlayMapMusic();
+    }
 }
 
 void ChangeBoxPokemonNickname(void)

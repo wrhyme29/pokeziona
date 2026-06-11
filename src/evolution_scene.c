@@ -171,6 +171,7 @@ static void CB2_BeginEvolutionScene(void)
 static void Task_BeginEvolutionScene(u8 taskId)
 {
     struct Pokemon *mon = NULL;
+
     switch (gTasks[taskId].tState)
     {
     case 0:
@@ -199,6 +200,7 @@ static void Task_BeginEvolutionScene(u8 taskId)
 void BeginEvolutionScene(struct Pokemon *mon, u16 postEvoSpecies, bool8 canStopEvo, u8 partyId)
 {
     u8 taskId = CreateTask(Task_BeginEvolutionScene, 0);
+
     gTasks[taskId].tState = 0;
     gTasks[taskId].tPostEvoSpecies = postEvoSpecies;
     gTasks[taskId].tCanStop = canStopEvo;
@@ -643,6 +645,10 @@ static void Task_EvolutionScene(u8 taskId)
         gTasks[taskId].tState = EVOSTATE_CANCEL;
         gTasks[sEvoGraphicsTaskId].tEvoStopped = TRUE;
         StopBgAnimation();
+        if(gCB2_AfterEvolution != NULL)
+        {
+            SetMainCallback2(gCB2_AfterEvolution);
+        }
         return;
     }
 

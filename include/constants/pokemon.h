@@ -250,6 +250,7 @@
 #define EVO_LEVEL_NINJASK    13 // Pokémon reaches the specified level (special value for Ninjask)
 #define EVO_LEVEL_SHEDINJA   14 // Pokémon reaches the specified level (special value for Shedinja)
 #define EVO_BEAUTY           15 // Pokémon levels up with beauty ≥ specified value
+#define EVO_RENAME           16 // Pokémon is renamed = specified value
 
 #define EVOS_PER_MON 5
 
@@ -258,6 +259,7 @@
 #define EVO_MODE_TRADE      1
 #define EVO_MODE_ITEM_USE   2
 #define EVO_MODE_ITEM_CHECK 3 // If an Everstone is being held, still want to show that the stone *could* be used on that Pokémon to evolve
+#define EVO_MODE_RENAME     4
 
 #define MON_PIC_WIDTH 64
 #define MON_PIC_HEIGHT 64

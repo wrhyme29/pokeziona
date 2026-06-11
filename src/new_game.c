@@ -133,7 +133,6 @@ static void WarpToTruck(void)
 
 static void WarpToBedroom(void)
 {
-    DebugPrintf("In WarpToBedroom");
     SetWarpDestination(MAP_GROUP(MAP_KIBBUTZ_PLAYER_HOUSE), MAP_NUM(MAP_KIBBUTZ_PLAYER_HOUSE), WARP_ID_NONE, 2, 4);
     WarpIntoMap();
 }

@@ -5601,6 +5601,20 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem)
             }
         }
         break;
+    case EVO_MODE_RENAME:
+        for (i = 0; i < EVOS_PER_MON; i++)
+        {
+            if (gEvolutionTable[species][i].method == EVO_RENAME)
+            {
+                GetMonData(mon, MON_DATA_NICKNAME, gStringVar2);
+                if(!StringCompare(gEvolutionRenameTable[species], gStringVar2))
+                {
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                    break;
+                }
+            }
+        }
+        break;
     }
 
     return targetSpecies;
