@@ -184,10 +184,10 @@ static const struct SpriteTemplate sVersionBannerRightSpriteTemplate =
     .callback = SpriteCB_VersionBannerRight,
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_EmeraldVersion[] =
+static const struct CompressedSpriteSheet sSpriteSheet_ZionaVersion[] =
 {
     {
-        .data = gTitleScreenEmeraldVersionGfx,
+        .data = gTitleScreenZionaVersionGfx,
         .size = 0x1000,
         .tag = TAG_VERSION
     },
@@ -492,16 +492,7 @@ static void SpriteCB_PokemonLogoShine(struct Sprite *sprite)
             }
 
             backgroundColor = _RGB(sprite->sBgColor, sprite->sBgColor, sprite->sBgColor);
-
-            // Flash the background green for 4 frames of movement.
-            // Otherwise use the updating color.
-            if (sprite->x == DISPLAY_WIDTH / 2 + (3 * SHINE_SPEED)
-             || sprite->x == DISPLAY_WIDTH / 2 + (4 * SHINE_SPEED)
-             || sprite->x == DISPLAY_WIDTH / 2 + (5 * SHINE_SPEED)
-             || sprite->x == DISPLAY_WIDTH / 2 + (6 * SHINE_SPEED))
-                gPlttBufferFaded[0] = RGB(24, 31, 12);
-            else
-                gPlttBufferFaded[0] = backgroundColor;
+            gPlttBufferFaded[0] = backgroundColor;
         }
 
         sprite->x += SHINE_SPEED;
@@ -610,10 +601,10 @@ void CB2_InitTitleScreen(void)
         ResetSpriteData();
         FreeAllSpritePalettes();
         gReservedSpritePaletteCount = 9;
-        LoadCompressedSpriteSheet(&sSpriteSheet_EmeraldVersion[0]);
+        LoadCompressedSpriteSheet(&sSpriteSheet_ZionaVersion[0]);
         LoadCompressedSpriteSheet(&sSpriteSheet_PressStart[0]);
         LoadCompressedSpriteSheet(&sPokemonLogoShineSpriteSheet[0]);
-        LoadPalette(gTitleScreenEmeraldVersionPal, OBJ_PLTT_ID(0), PLTT_SIZE_4BPP);
+        LoadPalette(gTitleScreenZionaVersionPal, OBJ_PLTT_ID(0), PLTT_SIZE_4BPP);
         LoadSpritePalette(&sSpritePalette_PressStart[0]);
         gMain.state = 2;
         break;
