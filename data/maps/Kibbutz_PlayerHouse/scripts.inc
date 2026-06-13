@@ -91,6 +91,7 @@ Kibbutz_PlayerHouse_EventScript_TransferEeveeToPC::
 
 Kibbutz_PlayerHouse_EventScript_SetGotEevee::
 	setflag FLAG_GOT_EEVEE
+	setflag FLAG_SYS_POKEMON_GET
 	release
 	end
 
