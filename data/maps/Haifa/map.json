@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_BEACH",
-      "offset": 5,
+      "offset": 0,
       "direction": "down"
     }
   ],

@@ -28,7 +28,7 @@
   "warp_events": [
     {
       "warp_id": "TLV_LAB_OUTER",
-      "x": 33,
+      "x": 38,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_TEL_AVIV_LAB",
@@ -36,7 +36,7 @@
     },
     {
       "warp_id": "TLV_PC_OUTER",
-      "x": 20,
+      "x": 25,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_TLV_POKECENTER",
@@ -44,7 +44,7 @@
     },
     {
       "warp_id": "TLV_PM_OUTER",
-      "x": 16,
+      "x": 21,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_TLV_POKE_MART",
