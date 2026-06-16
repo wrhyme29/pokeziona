@@ -14,13 +14,43 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_KVISH1",
+      "map": "MAP_KVISH2",
       "offset": 35,
       "direction": "right"
+    },
+    {
+      "map": "MAP_BEACH",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "warp_id": "TLV_LAB_OUTER",
+      "x": 33,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV_LAB",
+      "dest_warp_id": "TLV_LAB_INDOOR"
+    },
+    {
+      "warp_id": "TLV_PC_OUTER",
+      "x": 20,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_TLV_POKECENTER",
+      "dest_warp_id": "TLV_PC_INDOOR"
+    },
+    {
+      "warp_id": "TLV_PM_OUTER",
+      "x": 16,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_TLV_POKE_MART",
+      "dest_warp_id": "TLV_PM_INDOOR"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

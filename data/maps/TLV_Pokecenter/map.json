@@ -1,7 +1,7 @@
 {
-  "id": "MAP_HAIFA",
-  "name": "Haifa",
-  "layout": "LAYOUT_HAIFA",
+  "id": "MAP_TLV_POKECENTER",
+  "name": "TLV_Pokecenter",
+  "layout": "LAYOUT_TLV_POKECENTER",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -12,15 +12,18 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
     {
-      "map": "MAP_BEACH",
-      "offset": 5,
-      "direction": "down"
+      "warp_id": "TLV_PC_INDOOR",
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV",
+      "dest_warp_id": "TLV_PC_OUTER"
     }
   ],
-  "object_events": [],
-  "warp_events": [],
   "coord_events": [],
   "bg_events": []
 }

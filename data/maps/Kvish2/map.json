@@ -1,7 +1,7 @@
 {
-  "id": "MAP_HAIFA",
-  "name": "Haifa",
-  "layout": "LAYOUT_HAIFA",
+  "id": "MAP_KVISH2",
+  "name": "Kvish2",
+  "layout": "LAYOUT_KVISH2",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -14,9 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_BEACH",
-      "offset": 5,
-      "direction": "down"
+      "map": "MAP_KVISH1",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_TEL_AVIV",
+      "offset": -35,
+      "direction": "left"
     }
   ],
   "object_events": [],

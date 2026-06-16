@@ -1068,3 +1068,19 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Beach/scripts.inc"
 
 	.include "data/maps/Haifa/scripts.inc"
+
+	.include "data/maps/Kvish2/scripts.inc"
+
+	.include "data/maps/TelAvivLab/scripts.inc"
+
+	.include "data/maps/TelAvivLabLeftTower/scripts.inc"
+
+	.include "data/maps/TelAvivLabRightTower/scripts.inc"
+
+	.include "data/maps/TLVLabLeftTowerSecFloor/scripts.inc"
+
+	.include "data/maps/TLVLabRightTowerSecFloor/scripts.inc"
+
+	.include "data/maps/TLV_Pokecenter/scripts.inc"
+
+	.include "data/maps/TLV_PokeMart/scripts.inc"

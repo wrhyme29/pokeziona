@@ -33,7 +33,8 @@
     "gMapGroup_IndoorRoute113",
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
-    "gMapGroup_IndoorRoute124"
+    "gMapGroup_IndoorRoute124",
+    "gMapGroup_IndoorTelAviv"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -97,7 +98,8 @@
     "Kvish1",
     "TelAviv",
     "Beach",
-    "Haifa"
+    "Haifa",
+    "Kvish2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -625,5 +627,14 @@
   ],
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
+  ],
+  "gMapGroup_IndoorTelAviv": [
+    "TelAvivLab",
+    "TelAvivLabLeftTower",
+    "TelAvivLabRightTower",
+    "TLVLabLeftTowerSecFloor",
+    "TLVLabRightTowerSecFloor",
+    "TLV_Pokecenter",
+    "TLV_PokeMart"
   ]
 }

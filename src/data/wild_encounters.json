@@ -11629,6 +11629,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_KVISH2",
+          "base_label": "gKvish2",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_MEOWTH"
+              },
+              {
+                "min_level": 6,
+                "max_level": 8,
+                "species": "SPECIES_HOPPIP"
+              },
+              {
+                "min_level": 7,
+                "max_level": 8,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SUDOWOODO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_PIKACHU"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
         }
       ]
     },

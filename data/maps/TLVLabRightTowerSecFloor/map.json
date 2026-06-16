@@ -1,0 +1,38 @@
+{
+  "id": "MAP_TLVLAB_RIGHT_TOWER_SEC_FLOOR",
+  "name": "TLVLabRightTowerSecFloor",
+  "layout": "LAYOUT_TLVLAB_RIGHT_TOWER_SEC_FLOOR",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "warp_id": "WARP_TLV_LAB_RT2",
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV_LAB_RIGHT_TOWER",
+      "dest_warp_id": "WARP_TLV_LAB_RT"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 10,
+      "elevation": 0,
+      "item": "ITEM_POTION",
+      "flag": "FLAG_TEMP_1"
+    }
+  ]
+}

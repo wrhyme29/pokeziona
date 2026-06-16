@@ -4445,7 +4445,7 @@
       "id": "LAYOUT_BEACH",
       "name": "Beach_Layout",
       "width": 20,
-      "height": 40,
+      "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Beach/border.bin",
@@ -4460,6 +4460,86 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Haifa/border.bin",
       "blockdata_filepath": "data/layouts/Haifa/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH2",
+      "name": "Kvish2_Layout",
+      "width": 30,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/Kvish2/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_LAB",
+      "name": "TelAvivLab_Layout",
+      "width": 14,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/TelAvivLab/border.bin",
+      "blockdata_filepath": "data/layouts/TelAvivLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_LAB_LEFT_TOWER",
+      "name": "TelAvivLabLeftTower_Layout",
+      "width": 12,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/TelAvivLabLeftTower/border.bin",
+      "blockdata_filepath": "data/layouts/TelAvivLabLeftTower/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_LAB_RIGHT_TOWER",
+      "name": "TelAvivLabRightTower_Layout",
+      "width": 12,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/TelAvivLabRightTower/border.bin",
+      "blockdata_filepath": "data/layouts/TelAvivLabRightTower/map.bin"
+    },
+    {
+      "id": "LAYOUT_TLVLAB_LEFT_TOWER_SEC_FLOOR",
+      "name": "TLVLabLeftTowerSecFloor_Layout",
+      "width": 11,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MysteryEventsHouse",
+      "border_filepath": "data/layouts/TLVLabLeftTowerSecFloor/border.bin",
+      "blockdata_filepath": "data/layouts/TLVLabLeftTowerSecFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_TLVLAB_RIGHT_TOWER_SEC_FLOOR",
+      "name": "TLVLabRightTowerSecFloor_Layout",
+      "width": 11,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/TLVLabRightTowerSecFloor/border.bin",
+      "blockdata_filepath": "data/layouts/TLVLabRightTowerSecFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_TLV_POKECENTER",
+      "name": "TLV_Pokecenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/TLV_Pokecenter/border.bin",
+      "blockdata_filepath": "data/layouts/TLV_Pokecenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_TLV_POKE_MART",
+      "name": "TLV_PokeMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/TLV_PokeMart/border.bin",
+      "blockdata_filepath": "data/layouts/TLV_PokeMart/map.bin"
     }
   ]
 }
