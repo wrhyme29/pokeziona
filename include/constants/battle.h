@@ -352,20 +352,26 @@ enum BattlerId
 #define B_WIN_PP                  7
 #define B_WIN_PSS_ICON            8 // Physical/Special/Status Icon
 #define B_WIN_PP_REMAINING        9
-#define B_WIN_MOVE_TYPE          10
-#define B_WIN_SWITCH_PROMPT      11 // "Switch which?"
-#define B_WIN_YESNO              12
-#define B_WIN_LEVEL_UP_BOX       13
-#define B_WIN_LEVEL_UP_BANNER    14
-#define B_WIN_VS_PLAYER          15
-#define B_WIN_VS_OPPONENT        16
-#define B_WIN_VS_MULTI_PLAYER_1  17
-#define B_WIN_VS_MULTI_PLAYER_2  18
-#define B_WIN_VS_MULTI_PLAYER_3  19
-#define B_WIN_VS_MULTI_PLAYER_4  20
-#define B_WIN_VS_OUTCOME_DRAW    21
-#define B_WIN_VS_OUTCOME_LEFT    22
-#define B_WIN_VS_OUTCOME_RIGHT   23
+#define B_WIN_MOVE_TYPE           10
+#define B_WIN_SWITCH_PROMPT       11 // "Switch which?"
+#define B_WIN_YESNO               12
+#define B_WIN_LEVEL_UP_BOX        13
+#define B_WIN_LEVEL_UP_BANNER     14
+#define B_WIN_VS_PLAYER           15
+#define B_WIN_VS_OPPONENT         16
+#define B_WIN_VS_MULTI_PLAYER_1   17
+#define B_WIN_VS_MULTI_PLAYER_2   18
+#define B_WIN_VS_MULTI_PLAYER_3   19
+#define B_WIN_VS_MULTI_PLAYER_4   20
+#define B_WIN_VS_OUTCOME_DRAW     21
+#define B_WIN_VS_OUTCOME_LEFT     22
+#define B_WIN_VS_OUTCOME_RIGHT    23
+#define B_WIN_MOVE_DESCRIPTION    24
+#define B_WIN_MOVE_DESCR_PSS_ICON 25
+#define B_WIN_OPEN_MOVE_DESCR_BOX          26
+#define B_WIN_OPEN_MOVE_DESCR_L_BUTTON     27
+#define B_WIN_OPEN_MOVE_DESCR_MOVE_INFO    28
+
 
 // The following are duplicate id values for windows that Battle Arena uses differently.
 #define ARENA_WIN_PLAYER_NAME      15

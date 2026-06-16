@@ -1,4 +1,5 @@
 #include "global.h"
+#include "constants/characters.h"
 
 ALIGNED(4) const u16 gFontSmallNarrowLatinGlyphs[] = INCGFX_U16("graphics/fonts/latin_small_narrow.png", ".latfont");
 ALIGNED(4) const u8 gFontSmallNarrowLatinGlyphWidths[] = {
@@ -290,3 +291,27 @@ ALIGNED(4) const u8 gFontShortJapaneseGlyphWidths[] = {
     10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
     10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
 };
+
+struct
+{
+    u16 tileOffset;
+    u8 width;
+    u8 height;
+} static const sKeypadIcons[] =
+{
+    [CHAR_A_BUTTON]       = {  0x0,  8, 12 },
+    [CHAR_B_BUTTON]       = {  0x1,  8, 12 },
+    [CHAR_L_BUTTON]       = {  0x2, 16, 12 },
+    [CHAR_R_BUTTON]       = {  0x4, 16, 12 },
+    [CHAR_START_BUTTON]   = {  0x6, 24, 12 },
+    [CHAR_SELECT_BUTTON]  = {  0x9, 24, 12 },
+    [CHAR_DPAD_UP]        = {  0xC,  8, 12 },
+    [CHAR_DPAD_DOWN]      = {  0xD,  8, 12 },
+    [CHAR_DPAD_LEFT]      = {  0xE,  8, 12 },
+    [CHAR_DPAD_RIGHT]     = {  0xF,  8, 12 },
+    [CHAR_DPAD_UPDOWN]    = { 0x20,  8, 12 },
+    [CHAR_DPAD_LEFTRIGHT] = { 0x21,  8, 12 },
+    [CHAR_DPAD_NONE]      = { 0x22,  8, 12 },
+};
+
+const u8 gKeypadIconTiles[] = INCBIN_U8("graphics/fonts/keypad_icons.4bpp");

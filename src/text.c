@@ -1606,22 +1606,6 @@ u8 RenderTextHandleBold(u8 *pixels, u8 fontId, u8 *str)
     return 1;
 }
 
-u8 DrawKeypadIcon(u8 windowId, u8 keypadIconId, u16 x, u16 y)
-{
-    BlitBitmapRectToWindow(
-        windowId,
-        sKeypadIconTiles + (sKeypadIcons[keypadIconId].tileOffset * 0x20),
-        0,
-        0,
-        0x80,
-        0x80,
-        x,
-        y,
-        sKeypadIcons[keypadIconId].width,
-        sKeypadIcons[keypadIconId].height);
-    return sKeypadIcons[keypadIconId].width;
-}
-
 u8 GetKeypadIconTileOffset(u8 keypadIconId)
 {
     return sKeypadIcons[keypadIconId].tileOffset;
@@ -1901,4 +1885,20 @@ static void DecompressGlyph_Bold(u16 glyphId)
     DecompressGlyphTile(glyphs + 0x80, gCurGlyph.gfxBufferBottom);
     gCurGlyph.width = 8;
     gCurGlyph.height = 12;
+}
+
+u8 DrawKeypadIcon(u8 windowId, u8 keypadIconId, u16 x, u16 y)
+{
+    BlitBitmapRectToWindow(
+        windowId,
+        gKeypadIconTiles + (sKeypadIcons[keypadIconId].tileOffset * 0x20),
+        0,
+        0,
+        0x80,
+        0x80,
+        x,
+        y,
+        sKeypadIcons[keypadIconId].width,
+        sKeypadIcons[keypadIconId].height);
+    return sKeypadIcons[keypadIconId].width;
 }
