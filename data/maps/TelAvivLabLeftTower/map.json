@@ -3,7 +3,7 @@
   "name": "TelAvivLabLeftTower",
   "layout": "LAYOUT_TEL_AVIV_LAB_LEFT_TOWER",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ZIONA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
