@@ -103,7 +103,8 @@
     "Kvish2"
   ],
   "gMapGroup_IndoorKibbutz": [
-    "Kibbutz_PlayerHouse"
+    "Kibbutz_PlayerHouse",
+    "Kibbutz_Barn"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -639,6 +640,9 @@
     "TLVLabLeftTowerSecFloor",
     "TLVLabRightTowerSecFloor",
     "TLV_Pokecenter",
-    "TLV_PokeMart"
+    "TLV_PokeMart",
+    "TLV_OldTowerA",
+    "TLV_OldTowerA1",
+    "TLV_OldTowerA2"
   ]
 }

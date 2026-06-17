@@ -1086,3 +1086,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TLV_Pokecenter/scripts.inc"
 
 	.include "data/maps/TLV_PokeMart/scripts.inc"
+
+	.include "data/maps/Kibbutz_Barn/scripts.inc"
+
+	.include "data/maps/TLV_OldTowerA/scripts.inc"
+
+	.include "data/maps/TLV_OldTowerA1/scripts.inc"
+
+	.include "data/maps/TLV_OldTowerA2/scripts.inc"

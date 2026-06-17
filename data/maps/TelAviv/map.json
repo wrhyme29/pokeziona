@@ -49,6 +49,14 @@
       "elevation": 0,
       "dest_map": "MAP_TLV_POKE_MART",
       "dest_warp_id": "TLV_PM_INDOOR"
+    },
+    {
+      "warp_id": "TLV_OTA_OUTER",
+      "x": 36,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_TLV_OLD_TOWER_A",
+      "dest_warp_id": "TLV_OT_INDOOR"
     }
   ],
   "coord_events": [],

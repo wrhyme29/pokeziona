@@ -27,6 +27,14 @@
       "elevation": 0,
       "dest_map": "MAP_KIBBUTZ_PLAYER_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "warp_id": "WARP_KBZ_BARN_OUTER",
+      "x": 15,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_KIBBUTZ_BARN",
+      "dest_warp_id": "WARP_KBZ_BARN_INDOOR"
     }
   ],
   "coord_events": [],
