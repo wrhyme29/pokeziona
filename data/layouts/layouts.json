@@ -4604,7 +4604,7 @@
     {
       "id": "LAYOUT_KVISH3",
       "name": "Kvish3_Layout",
-      "width": 40,
+      "width": 34,
       "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
