@@ -4624,7 +4624,7 @@
     {
       "id": "LAYOUT_CARMEL_MOUNTAIN",
       "name": "CarmelMountain_Layout",
-      "width": 30,
+      "width": 31,
       "height": 30,
       "primary_tileset": "gTileset_GeneralSnow",
       "secondary_tileset": "gTileset_Lavaridge",
