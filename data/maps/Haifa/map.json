@@ -17,6 +17,11 @@
       "map": "MAP_BEACH",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_KVISH3",
+      "offset": -15,
+      "direction": "right"
     }
   ],
   "object_events": [],

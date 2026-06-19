@@ -54,7 +54,16 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "warp_id": "BEACH_SHACK_OUTER",
+      "x": 22,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_BEACH_SHACK",
+      "dest_warp_id": "BEACH_SHACK_INDOOR"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

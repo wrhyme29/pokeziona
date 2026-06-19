@@ -35,7 +35,8 @@
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
     "gMapGroup_IndoorRoute124",
-    "gMapGroup_IndoorTelAviv"
+    "gMapGroup_IndoorTelAviv",
+    "gMapGroup_IndoorBeach"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -100,7 +101,8 @@
     "TelAviv",
     "Beach",
     "Haifa",
-    "Kvish2"
+    "Kvish2",
+    "Kvish3"
   ],
   "gMapGroup_IndoorKibbutz": [
     "Kibbutz_PlayerHouse",
@@ -644,5 +646,8 @@
     "TLV_OldTowerA",
     "TLV_OldTowerA1",
     "TLV_OldTowerA2"
+  ],
+  "gMapGroup_IndoorBeach": [
+    "BeachShack"
   ]
 }

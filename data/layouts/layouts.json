@@ -4590,6 +4590,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/TLV_OldTowerA2/border.bin",
       "blockdata_filepath": "data/layouts/TLV_OldTowerA2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACH_SHACK",
+      "name": "BeachShack_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SeashoreHouse",
+      "border_filepath": "data/layouts/BeachShack/border.bin",
+      "blockdata_filepath": "data/layouts/BeachShack/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH3",
+      "name": "Kvish3_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Kvish3/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish3/map.bin"
     }
   ]
 }

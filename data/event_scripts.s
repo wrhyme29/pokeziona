@@ -1094,3 +1094,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TLV_OldTowerA1/scripts.inc"
 
 	.include "data/maps/TLV_OldTowerA2/scripts.inc"
+
+	.include "data/maps/BeachShack/scripts.inc"
+
+	.include "data/maps/Kvish3/scripts.inc"
