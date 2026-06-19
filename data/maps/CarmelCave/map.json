@@ -1,7 +1,7 @@
 {
-  "id": "MAP_KVISH3",
-  "name": "Kvish3",
-  "layout": "LAYOUT_KVISH3",
+  "id": "MAP_CARMEL_CAVE",
+  "name": "CarmelCave",
+  "layout": "LAYOUT_CARMEL_CAVE",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -12,21 +12,23 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_HAIFA",
-      "offset": 15,
-      "direction": "left"
-    }
-  ],
+  "connections": null,
   "object_events": [],
   "warp_events": [
     {
-      "warp_id": "K3_Cave_Entrance",
-      "x": 30,
-      "y": 1,
+      "warp_id": "K3_Carmel_Cave",
+      "x": 7,
+      "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_map": "MAP_KVISH3",
+      "dest_warp_id": "K3_Cave_Entrance"
+    },
+    {
+      "warp_id": "Carmel_Cave_Exit",
+      "x": 7,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_MOUNTAIN",
       "dest_warp_id": "0"
     }
   ],

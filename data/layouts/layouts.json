@@ -4610,6 +4610,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Kvish3/border.bin",
       "blockdata_filepath": "data/layouts/Kvish3/map.bin"
+    },
+    {
+      "id": "LAYOUT_CARMEL_CAVE",
+      "name": "CarmelCave_Layout",
+      "width": 15,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CarmelCave/border.bin",
+      "blockdata_filepath": "data/layouts/CarmelCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_CARMEL_MOUNTAIN",
+      "name": "CarmelMountain_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/CarmelMountain/border.bin",
+      "blockdata_filepath": "data/layouts/CarmelMountain/map.bin"
     }
   ]
 }

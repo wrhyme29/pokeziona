@@ -1098,3 +1098,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/BeachShack/scripts.inc"
 
 	.include "data/maps/Kvish3/scripts.inc"
+
+	.include "data/maps/CarmelCave/scripts.inc"
+
+	.include "data/maps/CarmelMountain/scripts.inc"
