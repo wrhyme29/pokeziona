@@ -1653,3 +1653,41 @@ const u16 gTilesetPalettes_GeneralSnow[][16] =
 };
 
 const u32 gTilesetTiles_GeneralSnow[] = INCBIN_U32("data/tilesets/primary/general_snow/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_GeneralDesert[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_desert/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GeneralDesert[] = INCBIN_U32("data/tilesets/primary/general_desert/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_DesertVillage[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/desert_village/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_DesertVillage[] = INCBIN_U32("data/tilesets/secondary/desert_village/tiles.4bpp.lz");
