@@ -1102,3 +1102,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CarmelCave/scripts.inc"
 
 	.include "data/maps/CarmelMountain/scripts.inc"
+
+	.include "data/maps/Kvish4/scripts.inc"
+
+	.include "data/maps/GolanForest/scripts.inc"

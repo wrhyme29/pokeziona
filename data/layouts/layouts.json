@@ -4630,6 +4630,26 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/CarmelMountain/border.bin",
       "blockdata_filepath": "data/layouts/CarmelMountain/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH4",
+      "name": "Kvish4_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Kvish4/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOLAN_FOREST",
+      "name": "GolanForest_Layout",
+      "width": 20,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GolanForest/border.bin",
+      "blockdata_filepath": "data/layouts/GolanForest/map.bin"
     }
   ]
 }

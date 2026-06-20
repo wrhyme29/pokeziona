@@ -1,7 +1,7 @@
 {
-  "id": "MAP_CARMEL_MOUNTAIN",
-  "name": "CarmelMountain",
-  "layout": "LAYOUT_CARMEL_MOUNTAIN",
+  "id": "MAP_GOLAN_FOREST",
+  "name": "GolanForest",
+  "layout": "LAYOUT_GOLAN_FOREST",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -16,7 +16,7 @@
     {
       "map": "MAP_KVISH4",
       "offset": 0,
-      "direction": "right"
+      "direction": "up"
     }
   ],
   "object_events": [],
