@@ -1106,3 +1106,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Kvish4/scripts.inc"
 
 	.include "data/maps/GolanForest/scripts.inc"
+
+	.include "data/maps/Kvish5/scripts.inc"
