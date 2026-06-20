@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_HAIFA",
-      "offset": 15,
+      "offset": 35,
       "direction": "left"
     }
   ],
@@ -24,7 +24,7 @@
     {
       "warp_id": "K3_Cave_Entrance",
       "x": 30,
-      "y": 1,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_CARMEL_CAVE",
       "dest_warp_id": "0"
