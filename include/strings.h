@@ -341,7 +341,8 @@ extern const u8 gText_Birch_Welcome[];
 extern const u8 gText_ThisIsAPokemon[];
 extern const u8 gText_Birch_MainSpeech[];
 extern const u8 gText_Birch_AndYouAre[];
-extern const u8 gText_Birch_BoyOrGirl[];
+extern const u8 gText_Birch_WhatsYourGender[];
+extern const u8 gText_Birch_WhatsYourAppearance[];
 extern const u8 gText_Birch_WhatsYourName[];
 extern const u8 gText_Birch_SoItsPlayer[];
 extern const u8 gText_Birch_YourePlayer[];
@@ -352,6 +353,9 @@ extern const u8 gText_ContinueMenuPokedex[];
 extern const u8 gText_ContinueMenuBadges[];
 extern const u8 gText_BirchBoy[];
 extern const u8 gText_BirchGirl[];
+extern const u8 gText_BirchNonbinary[];
+extern const u8 gText_BirchMalePresenting[];
+extern const u8 gText_BirchFemalePresenting[];
 extern const u8 gText_DefaultNameStu[];
 extern const u8 gText_DefaultNameMilton[];
 extern const u8 gText_DefaultNameTom[];
@@ -623,6 +627,7 @@ extern const u8 gText_SpaceTimes[];
 
 extern const u8 gText_BigGuy[];
 extern const u8 gText_BigGirl[];
+extern const u8 gText_BigPerson[];
 extern const u8 gText_Son[];
 extern const u8 gText_Daughter[];
 

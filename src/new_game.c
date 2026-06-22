@@ -134,6 +134,7 @@ static void WarpToTruck(void)
 static void WarpToBedroom(void)
 {
     SetWarpDestination(MAP_GROUP(MAP_KIBBUTZ_PLAYER_HOUSE), MAP_NUM(MAP_KIBBUTZ_PLAYER_HOUSE), WARP_ID_NONE, 2, 4);
+    SetLastHealLocationWarp(HEAL_LOCATION_KIBBUTZ_PLAYER_HOUSE);
     WarpIntoMap();
 }
 

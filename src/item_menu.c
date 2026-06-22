@@ -816,17 +816,38 @@ static bool8 LoadBagMenu_Graphics(void)
         }
         break;
     case 2:
-        if (!IsWallysBag() && gSaveBlock2Ptr->playerGender != MALE)
-            LoadCompressedPalette(gBagScreenFemale_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
-        else
-            LoadCompressedPalette(gBagScreenMale_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+        if (!IsWallysBag())
+        {
+            switch(gSaveBlock2Ptr->playerGender)
+            {
+                case FEMALE:
+                case NONBINARY_FEMALE_PRESENTING:
+                    LoadCompressedPalette(gBagScreenFemale_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+                    break;
+                case MALE:
+                case NONBINARY_MALE_PRESENTING:
+                    LoadCompressedPalette(gBagScreenMale_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+                    break;
+            }
+        }
         gBagMenu->graphicsLoadState++;
         break;
     case 3:
-        if (IsWallysBag() == TRUE || gSaveBlock2Ptr->playerGender == MALE)
+        if (IsWallysBag())
+        {
             LoadCompressedSpriteSheet(&gBagMaleSpriteSheet);
-        else
-            LoadCompressedSpriteSheet(&gBagFemaleSpriteSheet);
+        }
+        switch(gSaveBlock2Ptr->playerGender)
+        {
+            case FEMALE:
+            case NONBINARY_FEMALE_PRESENTING:
+                LoadCompressedSpriteSheet(&gBagFemaleSpriteSheet);
+                break;
+            case MALE:
+            case NONBINARY_MALE_PRESENTING:
+                LoadCompressedSpriteSheet(&gBagMaleSpriteSheet);
+                break;
+        }
         gBagMenu->graphicsLoadState++;
         break;
     case 4:

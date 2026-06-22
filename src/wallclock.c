@@ -646,10 +646,17 @@ static void LoadWallClockGraphics(void)
     DmaClear16(3, (void *)PLTT, PLTT_SIZE);
     LZ77UnCompVram(gWallClock_Gfx, (void *)VRAM);
 
-    if (gSpecialVar_0x8004 == MALE)
-        LoadPalette(gWallClockMale_Pal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
-    else
-        LoadPalette(gWallClockFemale_Pal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
+    switch(gSpecialVar_0x8004)
+    {
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+            LoadPalette(gWallClockFemale_Pal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
+            break;
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+            LoadPalette(gWallClockMale_Pal, BG_PLTT_ID(0), PLTT_SIZE_4BPP);
+            break;
+    }
 
     LoadPalette(GetOverworldTextboxPalettePtr(), BG_PLTT_ID(14), PLTT_SIZE_4BPP);
     LoadPalette(sTextPrompt_Pal, BG_PLTT_ID(12), PLTT_SIZEOF(4));

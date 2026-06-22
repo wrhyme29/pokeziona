@@ -3,12 +3,11 @@ Kibbutz_PlayerHouse_MapScripts::
 
 Kibbutz_PlayerHouse_EventScript_PC::
 	lockall
-	checkplayergender
 	call Kibbutz_PlayerHouse_EventScript_CheckPlayersPC
 	end
 
 Kibbutz_PlayerHouse_EventScript_CheckPlayersPC::
-	setvar VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE
+	setvar VAR_0x8004, PC_LOCATION_PLAYERS_HOUSE
 	special DoPCTurnOnEffect
 	playse SE_PC_ON
 	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
@@ -17,7 +16,7 @@ Kibbutz_PlayerHouse_EventScript_CheckPlayersPC::
 	end
 
 Kibbutz_PlayerHouse_EventScript_TurnOffPlayerPC::
-	setvar VAR_0x8004, PC_LOCATION_BRENDANS_HOUSE
+	setvar VAR_0x8004, PC_LOCATION_PLAYERS_HOUSE
 	playse SE_PC_OFF
 	special DoPCTurnOffEffect
 	releaseall

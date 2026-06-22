@@ -2492,10 +2492,17 @@ void SetLinkContestPlayerGfx(void)
             int version = (u8)gLinkPlayers[i].version;
             if (version == VERSION_RUBY || version == VERSION_SAPPHIRE)
             {
-                if (gLinkPlayers[i].gender == MALE)
-                    gContestMons[i].trainerGfxId = OBJ_EVENT_GFX_LINK_RS_BRENDAN;
-                else
-                    gContestMons[i].trainerGfxId = OBJ_EVENT_GFX_LINK_RS_MAY;
+                switch(gLinkPlayers[i].gender)
+                {
+                    case FEMALE:
+                    case NONBINARY_FEMALE_PRESENTING:
+                        gContestMons[i].trainerGfxId = OBJ_EVENT_GFX_LINK_RS_MAY;
+                        break;
+                    case MALE:
+                    case NONBINARY_MALE_PRESENTING:
+                        gContestMons[i].trainerGfxId = OBJ_EVENT_GFX_LINK_RS_BRENDAN;
+                        break;
+                }
             }
         }
 
@@ -2530,17 +2537,31 @@ void LoadLinkContestPlayerPalettes(void)
             version = (u8)gLinkPlayers[i].version;
             if (version == VERSION_RUBY || version == VERSION_SAPPHIRE)
             {
-                if (gLinkPlayers[i].gender == MALE)
-                    LoadPalette(gObjectEventPal_RubySapphireBrendan, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
-                else
-                    LoadPalette(gObjectEventPal_RubySapphireMay, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                switch(gLinkPlayers[i].gender)
+                {
+                    case FEMALE:
+                    case NONBINARY_FEMALE_PRESENTING:
+                        LoadPalette(gObjectEventPal_RubySapphireMay, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                        break;
+                    case MALE:
+                    case NONBINARY_MALE_PRESENTING:
+                        LoadPalette(gObjectEventPal_RubySapphireBrendan, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                        break;
+                }
             }
             else
             {
-                if (gLinkPlayers[i].gender == MALE)
-                    LoadPalette(gObjectEventPal_Brendan, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
-                else
-                    LoadPalette(gObjectEventPal_May, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                switch(gLinkPlayers[i].gender)
+                {
+                    case FEMALE:
+                    case NONBINARY_FEMALE_PRESENTING:
+                        LoadPalette(gObjectEventPal_May, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                        break;
+                    case MALE:
+                    case NONBINARY_MALE_PRESENTING:
+                        LoadPalette(gObjectEventPal_Brendan, OBJ_PLTT_ID(6 + i), PLTT_SIZE_4BPP);
+                        break;
+                }
             }
         }
     }

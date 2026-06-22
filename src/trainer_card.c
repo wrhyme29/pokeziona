@@ -293,13 +293,17 @@ static const u8 sTrainerPicOffset[2][GENDER_COUNT][2] =
 {
     // Kanto
     {
-        [MALE]   = {13, 4},
-        [FEMALE] = {13, 4}
+        [MALE]                          = {13, 4},
+        [FEMALE]                        = {13, 4},
+        [NONBINARY_MALE_PRESENTING]     = {13, 4},
+        [NONBINARY_FEMALE_PRESENTING]   = {13, 4}
     },
     // Hoenn
     {
-        [MALE]   = {1, 0},
-        [FEMALE] = {1, 0}
+        [MALE]                          = {1, 0},
+        [FEMALE]                        = {1, 0},
+        [NONBINARY_MALE_PRESENTING]     = {1, 0},
+        [NONBINARY_FEMALE_PRESENTING]   = {1, 0}
     },
 };
 
@@ -307,18 +311,24 @@ static const u8 sTrainerPicFacilityClass[][GENDER_COUNT] =
 {
     [CARD_TYPE_FRLG] =
     {
-        [MALE]   = FACILITY_CLASS_RED,
-        [FEMALE] = FACILITY_CLASS_LEAF
+        [MALE]                          = FACILITY_CLASS_RED,
+        [FEMALE]                        = FACILITY_CLASS_LEAF,
+        [NONBINARY_MALE_PRESENTING]     = FACILITY_CLASS_RED,
+        [NONBINARY_FEMALE_PRESENTING]   = FACILITY_CLASS_LEAF
     },
     [CARD_TYPE_RS] =
     {
-        [MALE]   = FACILITY_CLASS_RS_BRENDAN,
-        [FEMALE] = FACILITY_CLASS_RS_MAY
+        [MALE]                          = FACILITY_CLASS_RS_BRENDAN,
+        [FEMALE]                        = FACILITY_CLASS_RS_MAY,
+        [NONBINARY_MALE_PRESENTING]     = FACILITY_CLASS_RS_BRENDAN,
+        [NONBINARY_FEMALE_PRESENTING]   = FACILITY_CLASS_RS_MAY
     },
     [CARD_TYPE_EMERALD] =
     {
-        [MALE]   = FACILITY_CLASS_BRENDAN,
-        [FEMALE] = FACILITY_CLASS_MAY
+        [MALE]                          = FACILITY_CLASS_BRENDAN,
+        [FEMALE]                        = FACILITY_CLASS_MAY,
+        [NONBINARY_MALE_PRESENTING]     = FACILITY_CLASS_BRENDAN,
+        [NONBINARY_FEMALE_PRESENTING]   = FACILITY_CLASS_MAY
     }
 };
 
@@ -774,10 +784,18 @@ static void TrainerCard_GenerateCardForPlayer(struct TrainerCard *trainerCard)
     if (trainerCard->hasAllFrontierSymbols)
         trainerCard->stars++;
 
-    if (trainerCard->gender == FEMALE)
-        trainerCard->unionRoomClass = gUnionRoomFacilityClasses[(trainerCard->trainerId % NUM_UNION_ROOM_CLASSES) + NUM_UNION_ROOM_CLASSES];
-    else
-        trainerCard->unionRoomClass = gUnionRoomFacilityClasses[trainerCard->trainerId % NUM_UNION_ROOM_CLASSES];
+    switch(gSaveBlock2Ptr->playerGender)
+    {
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+           trainerCard->unionRoomClass = gUnionRoomFacilityClasses[(trainerCard->trainerId % NUM_UNION_ROOM_CLASSES) + NUM_UNION_ROOM_CLASSES];
+           break;
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+        default:
+            trainerCard->unionRoomClass = gUnionRoomFacilityClasses[trainerCard->trainerId % NUM_UNION_ROOM_CLASSES];
+            break;
+    }
 }
 
 void TrainerCard_GenerateCardForLinkPlayer(struct TrainerCard *trainerCard)
@@ -790,10 +808,18 @@ void TrainerCard_GenerateCardForLinkPlayer(struct TrainerCard *trainerCard)
     if (trainerCard->linkHasAllFrontierSymbols)
         trainerCard->stars++;
 
-    if (trainerCard->gender == FEMALE)
-        trainerCard->unionRoomClass = gUnionRoomFacilityClasses[(trainerCard->trainerId % NUM_UNION_ROOM_CLASSES) + NUM_UNION_ROOM_CLASSES];
-    else
-        trainerCard->unionRoomClass = gUnionRoomFacilityClasses[trainerCard->trainerId % NUM_UNION_ROOM_CLASSES];
+    switch(gSaveBlock2Ptr->playerGender)
+    {
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+           trainerCard->unionRoomClass = gUnionRoomFacilityClasses[(trainerCard->trainerId % NUM_UNION_ROOM_CLASSES) + NUM_UNION_ROOM_CLASSES];
+           break;
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+        default:
+            trainerCard->unionRoomClass = gUnionRoomFacilityClasses[trainerCard->trainerId % NUM_UNION_ROOM_CLASSES];
+            break;
+    }
 }
 
 void CopyTrainerCardData(struct TrainerCard *dst, struct TrainerCard *src, u8 gameVersion)
@@ -1438,15 +1464,21 @@ static u8 SetCardBgsAndPals(void)
         {
             LoadPalette(sHoennTrainerCardPals[sData->trainerCard.stars], BG_PLTT_ID(0), 3 * PLTT_SIZE_4BPP);
             LoadPalette(sHoennTrainerCardBadges_Pal, BG_PLTT_ID(3), PLTT_SIZE_4BPP);
-            if (sData->trainerCard.gender != MALE)
+            if (sData->trainerCard.gender == FEMALE ||
+                sData->trainerCard.gender == NONBINARY_FEMALE_PRESENTING)
+            {
                 LoadPalette(sHoennTrainerCardFemaleBg_Pal, BG_PLTT_ID(1), PLTT_SIZE_4BPP);
+            }
         }
         else
         {
             LoadPalette(sKantoTrainerCardPals[sData->trainerCard.stars], BG_PLTT_ID(0), 3 * PLTT_SIZE_4BPP);
             LoadPalette(sKantoTrainerCardBadges_Pal, BG_PLTT_ID(3), PLTT_SIZE_4BPP);
-            if (sData->trainerCard.gender != MALE)
+            if (sData->trainerCard.gender == FEMALE ||
+                sData->trainerCard.gender == NONBINARY_FEMALE_PRESENTING)
+            {
                 LoadPalette(sKantoTrainerCardFemaleBg_Pal, BG_PLTT_ID(1), PLTT_SIZE_4BPP);
+            }
         }
         LoadPalette(sTrainerCardStar_Pal, BG_PLTT_ID(4), PLTT_SIZE_4BPP);
         break;

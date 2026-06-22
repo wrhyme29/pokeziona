@@ -31,9 +31,11 @@ gText_Birch_MainSpeech::
 gText_Birch_AndYouAre::
 	.string "And you are?$"
 
-gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+gText_Birch_WhatsYourGender::
+	.string "What's your gender?$"
+
+gText_Birch_WhatsYourAppearance::
+	.string "What do you look like?$"
 
 gText_Birch_WhatsYourName::
 	.string "All right.\n"

@@ -447,18 +447,30 @@ static const u8 *ExpandPlaceholder_StringVar3(void)
 
 static const u8 *ExpandPlaceholder_KunChan(void)
 {
-    if (gSaveBlock2Ptr->playerGender == MALE)
-        return gText_ExpandedPlaceholder_Kun;
-    else
-        return gText_ExpandedPlaceholder_Chan;
+    switch(gSaveBlock2Ptr->playerGender)
+    {
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+            return gText_ExpandedPlaceholder_Chan;
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+        default:
+            return gText_ExpandedPlaceholder_Kun;
+    }
 }
 
 static const u8 *ExpandPlaceholder_RivalName(void)
 {
-    if (gSaveBlock2Ptr->playerGender == MALE)
-        return gText_ExpandedPlaceholder_May;
-    else
-        return gText_ExpandedPlaceholder_Brendan;
+    switch(gSaveBlock2Ptr->playerGender)
+    {
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+            return gText_ExpandedPlaceholder_Brendan;
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+        default:
+            return gText_ExpandedPlaceholder_May;
+    }
 }
 
 static const u8 *ExpandPlaceholder_Version(void)

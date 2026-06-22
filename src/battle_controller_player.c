@@ -2477,28 +2477,57 @@ static void PlayerHandleDrawTrainerPic(void)
 static void PlayerHandleTrainerSlide(void)
 {
     u32 trainerPicId;
+    u8 trainerBackPicOffset;
+    u8 genderOffset;
 
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
     {
-        if ((gLinkPlayers[GetMultiplayerId()].version & 0xFF) == VERSION_FIRE_RED
-            || (gLinkPlayers[GetMultiplayerId()].version & 0xFF) == VERSION_LEAF_GREEN)
+        switch((gLinkPlayers[GetMultiplayerId()].version & 0xFF))
         {
-            trainerPicId = gLinkPlayers[GetMultiplayerId()].gender + TRAINER_BACK_PIC_RED;
+            case VERSION_FIRE_RED:
+            case VERSION_LEAF_GREEN:
+                trainerBackPicOffset = TRAINER_BACK_PIC_RED;
+                break;
+            case VERSION_RUBY:
+            case VERSION_SAPPHIRE:
+                trainerBackPicOffset = TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN;
+                break;
+            default:
+                trainerBackPicOffset = TRAINER_BACK_PIC_BRENDAN;
+                break;
         }
-        else if ((gLinkPlayers[GetMultiplayerId()].version & 0xFF) == VERSION_RUBY
-                 || (gLinkPlayers[GetMultiplayerId()].version & 0xFF) == VERSION_SAPPHIRE)
+
+        switch(gLinkPlayers[GetMultiplayerId()].gender)
         {
-            trainerPicId = gLinkPlayers[GetMultiplayerId()].gender + TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN;
-        }
-        else
-        {
-            trainerPicId = gLinkPlayers[GetMultiplayerId()].gender + TRAINER_BACK_PIC_BRENDAN;
-        }
+            case FEMALE:
+            case NONBINARY_FEMALE_PRESENTING:
+                genderOffset = 1;
+                break;
+            case MALE:
+            case NONBINARY_MALE_PRESENTING:
+                genderOffset = 0;
+                break;
+        }    
     }
     else
     {
-        trainerPicId = gSaveBlock2Ptr->playerGender + TRAINER_BACK_PIC_BRENDAN;
+        trainerBackPicOffset = TRAINER_BACK_PIC_BRENDAN;
+
+        switch(gSaveBlock2Ptr->playerGender)
+        {
+            case FEMALE:
+            case NONBINARY_FEMALE_PRESENTING:
+                genderOffset = 1;
+                break;
+            case MALE:
+            case NONBINARY_MALE_PRESENTING:
+                genderOffset = 0;
+                break;
+        }
     }
+
+    trainerPicId = trainerBackPicOffset + genderOffset;
+
 
     DecompressTrainerBackPic(trainerPicId, gActiveBattler);
     SetMultiuseSpriteTemplateToTrainerBack(trainerPicId, GetBattlerPosition(gActiveBattler));
@@ -3069,6 +3098,7 @@ static void PlayerHandleIntroSlide(void)
 
 static void PlayerHandleIntroTrainerBallThrow(void)
 {
+    u8 genderOffset;
     u8 paletteNum;
     u8 taskId;
 
@@ -3084,7 +3114,18 @@ static void PlayerHandleIntroTrainerBallThrow(void)
     StartSpriteAnim(&gSprites[gBattlerSpriteIds[gActiveBattler]], 1);
 
     paletteNum = AllocSpritePalette(0xD6F8);
-    LoadCompressedPalette(gTrainerBackPicPaletteTable[gSaveBlock2Ptr->playerGender].data, OBJ_PLTT_ID(paletteNum), PLTT_SIZE_4BPP);
+    switch(gSaveBlock2Ptr->playerGender)
+    {
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+            genderOffset = 1;
+            break;
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+            genderOffset = 0;
+            break;
+    }
+    LoadCompressedPalette(gTrainerBackPicPaletteTable[genderOffset].data, OBJ_PLTT_ID(paletteNum), PLTT_SIZE_4BPP);
     gSprites[gBattlerSpriteIds[gActiveBattler]].oam.paletteNum = paletteNum;
 
     taskId = CreateTask(Task_StartSendOutAnim, 5);

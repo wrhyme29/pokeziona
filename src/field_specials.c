@@ -905,18 +905,34 @@ u8 GetPlayerTrainerIdOnesDigit(void)
 
 void GetPlayerBigGuyGirlString(void)
 {
-    if (gSaveBlock2Ptr->playerGender == MALE)
-        StringCopy(gStringVar1, gText_BigGuy);
-    else
-        StringCopy(gStringVar1, gText_BigGirl);
+    switch(gSaveBlock2Ptr->playerGender)
+    {
+        case MALE:
+            StringCopy(gStringVar1, gText_BigGuy);
+            break;
+        case FEMALE:
+            StringCopy(gStringVar1, gText_BigGirl);
+            break;
+        case NONBINARY_MALE_PRESENTING:
+        case NONBINARY_FEMALE_PRESENTING:
+            StringCopy(gStringVar1, gText_BigPerson);
+            break;
+    }
 }
 
 void GetRivalSonDaughterString(void)
 {
-    if (gSaveBlock2Ptr->playerGender == MALE)
-        StringCopy(gStringVar1, gText_Daughter);
-    else
-        StringCopy(gStringVar1, gText_Son);
+    switch(gSaveBlock2Ptr->playerGender)
+    {
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+            StringCopy(gStringVar1, gText_Son);
+            break;
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+            StringCopy(gStringVar1, gText_Daughter);
+            break;
+    }
 }
 
 u8 GetBattleOutcome(void)
@@ -1055,6 +1071,8 @@ static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
             metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;
         else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_MayPC_Off;
+        else if (gSpecialVar_0x8004 == PC_LOCATION_PLAYERS_HOUSE)
+            metatileId = METATILE_PlayersHouse_PlayerPC_Off;
     }
     else
     {
@@ -1065,6 +1083,8 @@ static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
             metatileId = METATILE_BrendansMaysHouse_BrendanPC_On;
         else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_MayPC_On;
+        else if (gSpecialVar_0x8004 == PC_LOCATION_PLAYERS_HOUSE)
+            metatileId = METATILE_PlayersHouse_PlayerPC_On;
     }
     MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + dx + MAP_OFFSET, gSaveBlock1Ptr->pos.y + dy + MAP_OFFSET, metatileId | MAPGRID_IMPASSABLE);
 }
@@ -1105,6 +1125,8 @@ static void PCTurnOffEffect(void)
         metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;
     else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
         metatileId = METATILE_BrendansMaysHouse_MayPC_Off;
+    else if (gSpecialVar_0x8004 == PC_LOCATION_PLAYERS_HOUSE)
+        metatileId = METATILE_PlayersHouse_PlayerPC_Off;
 
     MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + dx + MAP_OFFSET, gSaveBlock1Ptr->pos.y + dy + MAP_OFFSET, metatileId | MAPGRID_IMPASSABLE);
     DrawWholeMapView();
@@ -2768,10 +2790,17 @@ void SetBattleTowerLinkPlayerGfx(void)
     u8 i;
     for (i = 0; i < 2; i++)
     {
-        if (gLinkPlayers[i].gender == MALE)
-            VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_BRENDAN_NORMAL);
-        else
-            VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL);
+        switch(gLinkPlayers[i].gender)
+        {
+            case FEMALE:
+            case NONBINARY_FEMALE_PRESENTING:
+                VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL);
+                break;
+            case MALE:
+            case NONBINARY_MALE_PRESENTING:
+                VarSet(VAR_OBJ_GFX_ID_F - i, OBJ_EVENT_GFX_BRENDAN_NORMAL);
+                break;
+        }
     }
 }
 

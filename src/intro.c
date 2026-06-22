@@ -1377,10 +1377,17 @@ static void Task_Scene2_CreateSprites(u8 taskId)
     u8 spriteId;
 
     // Load sprite sheets
-    if (sIntroCharacterGender == MALE)
-        LoadCompressedSpriteSheet(gSpriteSheet_IntroBrendan);
-    else
-        LoadCompressedSpriteSheet(gSpriteSheet_IntroMay);
+    switch(sIntroCharacterGender)
+    {
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+            LoadCompressedSpriteSheet(gSpriteSheet_IntroMay);
+            break;
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+            LoadCompressedSpriteSheet(gSpriteSheet_IntroBrendan);
+            break;
+    }
 
     LoadCompressedSpriteSheet(gSpriteSheet_IntroBicycle);
     LoadCompressedSpriteSheet(gSpriteSheet_IntroFlygon);
@@ -1395,11 +1402,18 @@ static void Task_Scene2_CreateSprites(u8 taskId)
     // Create Pokémon and player sprites
     CreateSprite(&sSpriteTemplate_Manectric, DISPLAY_WIDTH + 32, 128, 0);
     CreateSprite(&sSpriteTemplate_Torchic, DISPLAY_WIDTH + 48, 110, 1);
-
-    if (sIntroCharacterGender == MALE)
-        spriteId = CreateIntroBrendanSprite(DISPLAY_WIDTH + 32, 100);
-    else
-        spriteId = CreateIntroMaySprite(DISPLAY_WIDTH + 32, 100);
+    
+    switch(sIntroCharacterGender)
+    {
+        case FEMALE:
+        case NONBINARY_FEMALE_PRESENTING:
+            spriteId = CreateIntroMaySprite(DISPLAY_WIDTH + 32, 100);
+            break;
+        case MALE:
+        case NONBINARY_MALE_PRESENTING:
+            spriteId = CreateIntroBrendanSprite(DISPLAY_WIDTH + 32, 100);
+            break;
+    }
 
     gSprites[spriteId].callback = SpriteCB_PlayerOnBicycle;
     gSprites[spriteId].anims = sAnims_PlayerBicycle;
