@@ -4455,7 +4455,7 @@
       "id": "LAYOUT_HAIFA",
       "name": "Haifa_Layout",
       "width": 30,
-      "height": 30,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Haifa/border.bin",
@@ -4645,7 +4645,7 @@
       "id": "LAYOUT_GOLAN_FOREST",
       "name": "GolanForest_Layout",
       "width": 20,
-      "height": 60,
+      "height": 50,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/GolanForest/border.bin",
@@ -4660,6 +4660,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Kvish5/border.bin",
       "blockdata_filepath": "data/layouts/Kvish5/map.bin"
+    },
+    {
+      "id": "LAYOUT_TIBERIAS",
+      "name": "Tiberias_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Tiberias/border.bin",
+      "blockdata_filepath": "data/layouts/Tiberias/map.bin"
     }
   ]
 }
