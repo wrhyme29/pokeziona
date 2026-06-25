@@ -4664,8 +4664,8 @@
     {
       "id": "LAYOUT_TIBERIAS",
       "name": "Tiberias_Layout",
-      "width": 60,
-      "height": 60,
+      "width": 70,
+      "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Tiberias/border.bin",
