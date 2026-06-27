@@ -4664,7 +4664,7 @@
     {
       "id": "LAYOUT_TIBERIAS",
       "name": "Tiberias_Layout",
-      "width": 70,
+      "width": 90,
       "height": 55,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
