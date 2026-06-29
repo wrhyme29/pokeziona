@@ -1,7 +1,7 @@
 {
-  "id": "MAP_TIBERIAS",
-  "name": "Tiberias",
-  "layout": "LAYOUT_TIBERIAS",
+  "id": "MAP_NORTH_KINNERET",
+  "name": "NorthKinneret",
+  "layout": "LAYOUT_NORTH_KINNERET",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
@@ -14,18 +14,8 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_GOLAN_FOREST",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_NORTH_KINNERET",
-      "offset": 50,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_JORDAN_RIVER",
-      "offset": 20,
+      "map": "MAP_TIBERIAS",
+      "offset": -50,
       "direction": "down"
     }
   ],

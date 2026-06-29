@@ -1,9 +1,9 @@
 {
-  "id": "MAP_TIBERIAS",
-  "name": "Tiberias",
-  "layout": "LAYOUT_TIBERIAS",
+  "id": "MAP_JORDAN_RIVER",
+  "name": "JordanRiver",
+  "layout": "LAYOUT_JORDAN_RIVER",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ZIONA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -14,18 +14,13 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_GOLAN_FOREST",
+      "map": "MAP_TIBERIAS",
+      "offset": -20,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_DEAD_SEA",
       "offset": 0,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_NORTH_KINNERET",
-      "offset": 50,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_JORDAN_RIVER",
-      "offset": 20,
       "direction": "down"
     }
   ],

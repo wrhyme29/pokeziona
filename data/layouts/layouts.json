@@ -4670,6 +4670,36 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Tiberias/border.bin",
       "blockdata_filepath": "data/layouts/Tiberias/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_KINNERET",
+      "name": "NorthKinneret_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/NorthKinneret/border.bin",
+      "blockdata_filepath": "data/layouts/NorthKinneret/map.bin"
+    },
+    {
+      "id": "LAYOUT_JORDAN_RIVER",
+      "name": "JordanRiver_Layout",
+      "width": 40,
+      "height": 70,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JordanRiver/border.bin",
+      "blockdata_filepath": "data/layouts/JordanRiver/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEAD_SEA",
+      "name": "DeadSea_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/DeadSea/border.bin",
+      "blockdata_filepath": "data/layouts/DeadSea/map.bin"
     }
   ]
 }
