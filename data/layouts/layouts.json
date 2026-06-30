@@ -4696,10 +4696,20 @@
       "name": "DeadSea_Layout",
       "width": 40,
       "height": 60,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_GeneralDesert",
       "secondary_tileset": "gTileset_DesertVillage",
       "border_filepath": "data/layouts/DeadSea/border.bin",
       "blockdata_filepath": "data/layouts/DeadSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_JORDAN_CAVE",
+      "name": "Jordan_Cave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Jordan_Cave/border.bin",
+      "blockdata_filepath": "data/layouts/Jordan_Cave/map.bin"
     }
   ]
 }

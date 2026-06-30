@@ -1,7 +1,7 @@
 {
-  "id": "MAP_JORDAN_RIVER",
-  "name": "JordanRiver",
-  "layout": "LAYOUT_JORDAN_RIVER",
+  "id": "MAP_JORDAN_CAVE",
+  "name": "Jordan_Cave",
+  "layout": "LAYOUT_JORDAN_CAVE",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ZIONA",
   "requires_flash": false,
@@ -12,22 +12,24 @@
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_TIBERIAS",
-      "offset": -20,
-      "direction": "up"
-    }
-  ],
+  "connections": null,
   "object_events": [],
   "warp_events": [
     {
-      "warp_id": "JC_Entrance_Outer",
-      "x": 19,
-      "y": 64,
+      "warp_id": "JC_Entrance_Inner",
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_JORDAN_RIVER",
+      "dest_warp_id": "JC_Entrance_Outer"
+    },
+    {
+      "warp_id": "JC_Exit_Inner",
+      "x": 14,
+      "y": 16,
       "elevation": 0,
       "dest_map": "MAP_JORDAN_CAVE",
-      "dest_warp_id": "JC_Entrance_Inner"
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

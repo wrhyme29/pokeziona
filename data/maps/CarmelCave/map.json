@@ -25,11 +25,59 @@
     },
     {
       "warp_id": "Carmel_Cave_Exit",
-      "x": 7,
-      "y": 23,
+      "x": 42,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_CARMEL_MOUNTAIN",
       "dest_warp_id": "0"
+    },
+    {
+      "warp_id": "Cave_A",
+      "x": 5,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "Cave_B"
+    },
+    {
+      "warp_id": "Cave_B",
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "Cave_A"
+    },
+    {
+      "warp_id": "Cave_C",
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "warp_id": "Cave_D",
+      "x": 18,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "Cave_C"
+    },
+    {
+      "warp_id": "Cave_E",
+      "x": 34,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "Cave_F"
+    },
+    {
+      "warp_id": "Cave_F",
+      "x": 31,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "Cave_E"
     }
   ],
   "coord_events": [],

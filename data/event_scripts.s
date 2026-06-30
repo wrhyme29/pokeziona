@@ -1116,3 +1116,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/JordanRiver/scripts.inc"
 
 	.include "data/maps/DeadSea/scripts.inc"
+
+	.include "data/maps/Jordan_Cave/scripts.inc"
