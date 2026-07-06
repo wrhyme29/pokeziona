@@ -655,7 +655,10 @@
     "TLV_PokeMart",
     "TLV_OldTowerA",
     "TLV_OldTowerA1",
-    "TLV_OldTowerA2"
+    "TLV_OldTowerA2",
+    "TLV_OldTowerB",
+    "TLV_OldTowerB1",
+    "TLV_OldTowerb2"
   ],
   "gMapGroup_IndoorBeach": [
     "BeachShack"

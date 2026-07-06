@@ -4710,6 +4710,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Jordan_Cave/border.bin",
       "blockdata_filepath": "data/layouts/Jordan_Cave/map.bin"
+    },
+    {
+      "id": "LAYOUT_TLV_OLD_TOWER_B",
+      "name": "TLV_OldTowerB_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TLV_OldTowerB/border.bin",
+      "blockdata_filepath": "data/layouts/TLV_OldTowerB/map.bin"
+    },
+    {
+      "id": "LAYOUT_TLV_OLD_TOWER_B1",
+      "name": "TLV_OldTowerB1_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TLV_OldTowerB1/border.bin",
+      "blockdata_filepath": "data/layouts/TLV_OldTowerB1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TLV_OLD_TOWERB2",
+      "name": "TLV_OldTowerb2_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TLV_OldTowerb2/border.bin",
+      "blockdata_filepath": "data/layouts/TLV_OldTowerb2/map.bin"
     }
   ]
 }

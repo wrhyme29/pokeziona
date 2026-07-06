@@ -1,33 +1,27 @@
 {
-  "id": "MAP_KVISH3",
-  "name": "Kvish3",
-  "layout": "LAYOUT_KVISH3",
+  "id": "MAP_TLV_OLD_TOWERB2",
+  "name": "TLV_OldTowerb2",
+  "layout": "LAYOUT_TLV_OLD_TOWERB2",
   "music": "MUS_DUMMY",
   "region_map_section": "MAPSEC_ZIONA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_HAIFA",
-      "offset": 35,
-      "direction": "left"
-    }
-  ],
+  "connections": null,
   "object_events": [],
   "warp_events": [
     {
-      "warp_id": "K3_Cave_Entrance",
-      "x": 30,
-      "y": 21,
+      "warp_id": "TLV_OTB2",
+      "x": 1,
+      "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_CARMEL_CAVE",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_TLV_OLD_TOWER_B1",
+      "dest_warp_id": "TLV_OTB1_UP"
     }
   ],
   "coord_events": [],
