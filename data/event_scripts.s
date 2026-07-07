@@ -1124,3 +1124,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TLV_OldTowerB1/scripts.inc"
 
 	.include "data/maps/TLV_OldTowerb2/scripts.inc"
+
+	.include "data/maps/Tiberias_Bikeshop/scripts.inc"
+
+	.include "data/maps/Kvish3_Flowershop/scripts.inc"

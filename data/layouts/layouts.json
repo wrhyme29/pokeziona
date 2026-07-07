@@ -4740,6 +4740,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/TLV_OldTowerb2/border.bin",
       "blockdata_filepath": "data/layouts/TLV_OldTowerb2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TIBERIAS_BIKESHOP",
+      "name": "Tiberias_Bikeshop_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/Tiberias_Bikeshop/border.bin",
+      "blockdata_filepath": "data/layouts/Tiberias_Bikeshop/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH3_FLOWERSHOP",
+      "name": "Kvish3_Flowershop_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
+      "border_filepath": "data/layouts/Kvish3_Flowershop/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish3_Flowershop/map.bin"
     }
   ]
 }

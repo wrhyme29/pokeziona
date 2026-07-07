@@ -112,7 +112,9 @@
     "NorthKinneret",
     "JordanRiver",
     "DeadSea",
-    "Jordan_Cave"
+    "Jordan_Cave",
+    "Tiberias_Bikeshop",
+    "Kvish3_Flowershop"
   ],
   "gMapGroup_IndoorKibbutz": [
     "Kibbutz_PlayerHouse",
