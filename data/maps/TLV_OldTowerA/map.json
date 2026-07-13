@@ -43,7 +43,7 @@
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_TEL_AVIV",
-      "dest_warp_id": "0"
+      "dest_warp_id": "TLV_OTA_OUTER"
     },
     {
       "warp_id": "TLV_OTA_INDOOR2",

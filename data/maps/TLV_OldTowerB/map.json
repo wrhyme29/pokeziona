@@ -16,7 +16,7 @@
   "object_events": [],
   "warp_events": [
     {
-      "warp_id": "TLV_OTB2",
+      "warp_id": "TLV_OTB_INDOOR2",
       "x": 3,
       "y": 11,
       "elevation": 0,
@@ -24,7 +24,7 @@
       "dest_warp_id": "TLV_OTB_OUTER"
     },
     {
-      "warp_id": "TLV_OTB1",
+      "warp_id": "TLV_OTB_INDOOR1",
       "x": 2,
       "y": 11,
       "elevation": 0,
