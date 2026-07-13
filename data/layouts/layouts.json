@@ -4652,16 +4652,6 @@
       "blockdata_filepath": "data/layouts/GolanForest/map.bin"
     },
     {
-      "id": "LAYOUT_KVISH5",
-      "name": "Kvish5_Layout",
-      "width": 60,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
-      "border_filepath": "data/layouts/Kvish5/border.bin",
-      "blockdata_filepath": "data/layouts/Kvish5/map.bin"
-    },
-    {
       "id": "LAYOUT_TIBERIAS",
       "name": "Tiberias_Layout",
       "width": 90,

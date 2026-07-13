@@ -1107,8 +1107,6 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/GolanForest/scripts.inc"
 
-	.include "data/maps/Kvish5/scripts.inc"
-
 	.include "data/maps/Tiberias/scripts.inc"
 
 	.include "data/maps/NorthKinneret/scripts.inc"
