@@ -4684,8 +4684,8 @@
     {
       "id": "LAYOUT_DEAD_SEA",
       "name": "DeadSea_Layout",
-      "width": 40,
-      "height": 60,
+      "width": 44,
+      "height": 80,
       "primary_tileset": "gTileset_GeneralDesert",
       "secondary_tileset": "gTileset_DesertVillage",
       "border_filepath": "data/layouts/DeadSea/border.bin",
