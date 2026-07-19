@@ -4684,7 +4684,7 @@
     {
       "id": "LAYOUT_DEAD_SEA",
       "name": "DeadSea_Layout",
-      "width": 44,
+      "width": 60,
       "height": 80,
       "primary_tileset": "gTileset_GeneralDesert",
       "secondary_tileset": "gTileset_DesertVillage",
@@ -4750,6 +4750,26 @@
       "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
       "border_filepath": "data/layouts/Kvish3_Flowershop/border.bin",
       "blockdata_filepath": "data/layouts/Kvish3_Flowershop/map.bin"
+    },
+    {
+      "id": "LAYOUT_TESTINGDESERTTILES",
+      "name": "testingdeserttiles_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/testingdeserttiles/border.bin",
+      "blockdata_filepath": "data/layouts/testingdeserttiles/map.bin"
+    },
+    {
+      "id": "LAYOUT_TESTINGSTONE",
+      "name": "testingstone_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/testingstone/border.bin",
+      "blockdata_filepath": "data/layouts/testingstone/map.bin"
     }
   ]
 }
