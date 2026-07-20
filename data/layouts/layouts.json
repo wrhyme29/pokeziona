@@ -4767,7 +4767,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_BattlePyramid",
       "border_filepath": "data/layouts/testingstone/border.bin",
       "blockdata_filepath": "data/layouts/testingstone/map.bin"
     }
