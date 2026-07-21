@@ -1130,3 +1130,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/testingdeserttiles/scripts.inc"
 
 	.include "data/maps/testingstone/scripts.inc"
+
+	.include "data/maps/JudeanDesert/scripts.inc"
+
+	.include "data/maps/DeadSeaGateHouse/scripts.inc"

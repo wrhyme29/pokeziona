@@ -4770,6 +4770,26 @@
       "secondary_tileset": "gTileset_BattlePyramid",
       "border_filepath": "data/layouts/testingstone/border.bin",
       "blockdata_filepath": "data/layouts/testingstone/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUDEAN_DESERT",
+      "name": "JudeanDesert_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/JudeanDesert/border.bin",
+      "blockdata_filepath": "data/layouts/JudeanDesert/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEAD_SEA_GATE_HOUSE",
+      "name": "DeadSeaGateHouse_Layout",
+      "width": 25,
+      "height": 70,
+      "primary_tileset": "gTileset_GeneralDesert",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/DeadSeaGateHouse/border.bin",
+      "blockdata_filepath": "data/layouts/DeadSeaGateHouse/map.bin"
     }
   ]
 }

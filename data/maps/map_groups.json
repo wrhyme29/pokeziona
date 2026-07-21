@@ -114,7 +114,9 @@
     "DeadSea",
     "Jordan_Cave",
     "Tiberias_Bikeshop",
-    "Kvish3_Flowershop"
+    "Kvish3_Flowershop",
+    "JudeanDesert",
+    "DeadSeaGateHouse"
   ],
   "gMapGroup_IndoorKibbutz": [
     "Kibbutz_PlayerHouse",
