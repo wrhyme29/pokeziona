@@ -4,10 +4,14 @@ RUN \
   apt update && \
   apt upgrade -y && \
   apt install -y \
+    g++ \
+    gcc \
     git \
+    libpng-dev \
     libpng16-16 \
     python3 \
-    wget
+    wget && \
+  ln -s /usr/bin/python3 /usr/bin/python
 RUN --mount=target=/tmp/install-devkitpro-pacman,source=mount/install-devkitpro-pacman \
   /tmp/install-devkitpro-pacman && \
   ln -s /proc/self/mounts /etc/mtab && \
