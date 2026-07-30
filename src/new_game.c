@@ -56,6 +56,7 @@ extern const u8 EventScript_ResetAllMapFlags[];
 extern const u8 EventScript_ResetAllMapFlagsFrlg[];
 
 static void ClearFrontierRecord(void);
+static void WarpToBedroom(void);
 static void WarpToTruck(void);
 static void ResetMiniGamesRecords(void);
 static void ResetItemFlags(void);
@@ -142,6 +143,15 @@ static void WarpToTruck(void)
     WarpIntoMap();
 }
 
+static void WarpToBedroom(void)
+{
+    // @TODO: Update to have IS_EMERALD and IS_ZIONA flags appropriately
+    //        Then move this logic into WarpToTruck? Unsure
+
+    SetWarpDestination(MAP_GROUP(MAP_KIBBUTZ_PLAYER_HOUSE), MAP_NUM(MAP_KIBBUTZ_PLAYER_HOUSE), WARP_ID_NONE, 2, 4);
+    WarpIntoMap();
+}
+
 void Sav2_ClearSetDefault(void)
 {
     ClearSav2();
@@ -211,7 +221,8 @@ void NewGameInitData(void)
     ResetFanClub();
     ResetLotteryCorner();
     UpdateDailySeed();
-    WarpToTruck();
+    // WarpToTruck();
+    WarpToBedroom();    
     if (IS_FRLG)
         RunScriptImmediately(EventScript_ResetAllMapFlagsFrlg);
     else

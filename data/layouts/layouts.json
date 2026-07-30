@@ -9323,6 +9323,386 @@
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_KIBBUTZ",
+      "name": "Kibbutz_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Kibbutz/border.bin",
+      "blockdata_filepath": "data/layouts/Kibbutz/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH1",
+      "name": "Kvish1_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Kvish1/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV",
+      "name": "TelAviv_Layout",
+      "width": 45,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/TelAviv/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACH",
+      "name": "Beach_Layout",
+      "width": 25,
+      "height": 70,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Beach/border.bin",
+      "blockdata_filepath": "data/layouts/Beach/map.bin"
+    },
+    {
+      "id": "LAYOUT_HAIFA",
+      "name": "Haifa_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/Haifa/border.bin",
+      "blockdata_filepath": "data/layouts/Haifa/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIBBUTZ_PLAYER_HOUSE",
+      "name": "Kibbutz_PlayerHouse_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Kibbutz_PlayerHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Kibbutz_PlayerHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH2",
+      "name": "Kvish2_Layout",
+      "width": 30,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/Kvish2/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_LAB",
+      "name": "TelAviv_Lab_Layout",
+      "width": 14,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/TelAviv_Lab/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_Lab/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_LAB_LEFT_TOWER_1F",
+      "name": "TelAviv_Lab_LT_1F_Layout",
+      "width": 12,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/TelAviv_Lab_LT_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_Lab_LT_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_LAB_RIGHT_TOWER_1F",
+      "name": "TelAviv_Lab_RT_1F_Layout",
+      "width": 12,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/TelAviv_Lab_RT_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_Lab_RT_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_LAB_LEFT_TOWER_2F",
+      "name": "TelAviv_Lab_LT_2F_Layout",
+      "width": 11,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MysteryEventsHouse",
+      "border_filepath": "data/layouts/TelAviv_Lab_LT_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_Lab_LT_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_LAB_RIGHT_TOWER_2F",
+      "name": "TelAviv_Lab_RT_2F_Layout",
+      "width": 11,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/TelAviv_Lab_RT_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_Lab_RT_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_POKEMON_CENTER",
+      "name": "TelAviv_PokemonCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/TelAviv_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_PokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_MART",
+      "name": "TelAviv_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/TelAviv_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIBBUTZ_BARN",
+      "name": "Kibbutz_Barn_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Kibbutz_Barn/border.bin",
+      "blockdata_filepath": "data/layouts/Kibbutz_Barn/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_OLD_TOWER_A_1F",
+      "name": "TelAviv_OldTowerA_1F_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TelAviv_OldTowerA_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_OldTowerA_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_OLD_TOWER_A_2F",
+      "name": "TelAviv_OldTowerA_2F_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TelAviv_OldTowerA_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_OldTowerA_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_OLD_TOWER_A_3F",
+      "name": "TelAviv_OldTowerA_3F_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TelAviv_OldTowerA_3F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_OldTowerA_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BEACH_SHACK",
+      "name": "BeachShack_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SeashoreHouse",
+      "border_filepath": "data/layouts/BeachShack/border.bin",
+      "blockdata_filepath": "data/layouts/BeachShack/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH3",
+      "name": "Kvish3_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Kvish3/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish3/map.bin"
+    },
+    {
+      "id": "LAYOUT_CARMEL_CAVE",
+      "name": "CarmelCave_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CarmelCave/border.bin",
+      "blockdata_filepath": "data/layouts/CarmelCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_CARMEL_MOUNTAIN",
+      "name": "CarmelMountain_Layout",
+      "width": 31,
+      "height": 30,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/CarmelMountain/border.bin",
+      "blockdata_filepath": "data/layouts/CarmelMountain/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH4",
+      "name": "Kvish4_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Kvish4/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOLAN_FOREST",
+      "name": "GolanForest_Layout",
+      "width": 20,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GolanForest/border.bin",
+      "blockdata_filepath": "data/layouts/GolanForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_TIBERIAS",
+      "name": "Tiberias_Layout",
+      "width": 90,
+      "height": 55,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Tiberias/border.bin",
+      "blockdata_filepath": "data/layouts/Tiberias/map.bin"
+    },
+    {
+      "id": "LAYOUT_NORTH_KINNERET",
+      "name": "NorthKinneret_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/NorthKinneret/border.bin",
+      "blockdata_filepath": "data/layouts/NorthKinneret/map.bin"
+    },
+    {
+      "id": "LAYOUT_JORDAN_RIVER",
+      "name": "JordanRiver_Layout",
+      "width": 40,
+      "height": 70,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JordanRiver/border.bin",
+      "blockdata_filepath": "data/layouts/JordanRiver/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEAD_SEA",
+      "name": "DeadSea_Layout",
+      "width": 60,
+      "height": 80,
+      "primary_tileset": "gTileset_GeneralDesert",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/DeadSea/border.bin",
+      "blockdata_filepath": "data/layouts/DeadSea/map.bin"
+    },
+    {
+      "id": "LAYOUT_JORDAN_CAVE",
+      "name": "JordanCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/JordanCave/border.bin",
+      "blockdata_filepath": "data/layouts/JordanCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_OLD_TOWER_B_1F",
+      "name": "TelAviv_OldTowerB_1F_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TelAviv_OldTowerB_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_OldTowerB_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_OLD_TOWER_B_2F",
+      "name": "TelAviv_OldTowerB_2F_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TelAviv_OldTowerB_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_OldTowerB_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEL_AVIV_OLD_TOWER_B_3F",
+      "name": "TelAviv_OldTowerB_3F_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TelAviv_OldTowerB_3F/border.bin",
+      "blockdata_filepath": "data/layouts/TelAviv_OldTowerB_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TIBERIAS_BIKESHOP",
+      "name": "Tiberias_Bikeshop_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/Tiberias_Bikeshop/border.bin",
+      "blockdata_filepath": "data/layouts/Tiberias_Bikeshop/map.bin"
+    },
+    {
+      "id": "LAYOUT_KVISH3_FLOWERSHOP",
+      "name": "Kvish3_Flowershop_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PrettyPetalFlowerShop",
+      "border_filepath": "data/layouts/Kvish3_Flowershop/border.bin",
+      "blockdata_filepath": "data/layouts/Kvish3_Flowershop/map.bin"
+    },
+    {
+      "id": "LAYOUT_TESTING_DESERT_TILES",
+      "name": "Testing_DesertTiles_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/Testing_DesertTiles/border.bin",
+      "blockdata_filepath": "data/layouts/Testing_DesertTiles/map.bin"
+    },
+    {
+      "id": "LAYOUT_TESTING_STONE",
+      "name": "Testing_Stone_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePyramid",
+      "border_filepath": "data/layouts/Testing_Stone/border.bin",
+      "blockdata_filepath": "data/layouts/Testing_Stone/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUDEAN_DESERT",
+      "name": "JudeanDesert_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/JudeanDesert/border.bin",
+      "blockdata_filepath": "data/layouts/JudeanDesert/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEAD_SEA_GATE_HOUSE",
+      "name": "DeadSea_GateHouse_Layout",
+      "width": 25,
+      "height": 70,
+      "primary_tileset": "gTileset_GeneralDesert",
+      "secondary_tileset": "gTileset_DesertVillage",
+      "border_filepath": "data/layouts/DeadSea_GateHouse/border.bin",
+      "blockdata_filepath": "data/layouts/DeadSea_GateHouse/map.bin"
     }
   ]
 }

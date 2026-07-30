@@ -1,0 +1,43 @@
+{
+  "id": "MAP_DEAD_SEA",
+  "name": "DeadSea",
+  "layout": "LAYOUT_DEAD_SEA",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ZIONA",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_DEAD_SEA_GATE_HOUSE",
+      "offset": 15,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "warp_id": "DEAD_SEA_JORDAN_CAVE_ENTRANCE_1",
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_JORDAN_CAVE",
+      "dest_warp_id": "JORDAN_CAVE_DEAD_SEA_EXIT"
+    },
+    {
+      "warp_id": "DEAD_SEA_JORDAN_CAVE_ENTRANCE_2",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_JORDAN_CAVE",
+      "dest_warp_id": "JORDAN_CAVE_DEAD_SEA_EXIT"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

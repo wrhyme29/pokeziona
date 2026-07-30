@@ -1,0 +1,43 @@
+{
+  "id": "MAP_KIBBUTZ",
+  "name": "Kibbutz",
+  "layout": "LAYOUT_KIBBUTZ",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ZIONA",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_KVISH1",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "warp_id": "KBZ_PH_DOOR_OUTER",
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_KIBBUTZ_PLAYER_HOUSE",
+      "dest_warp_id": "KBZ_PH_DOOR_INNER_1"
+    },
+    {
+      "warp_id": "KBZ_BARN_DOOR_OUTER",
+      "x": 15,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_KIBBUTZ_BARN",
+      "dest_warp_id": "KBZ_BARN_DOOR_INNER_1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "MAP_TIBERIAS_BIKESHOP",
+  "name": "Tiberias_Bikeshop",
+  "layout": "LAYOUT_TIBERIAS_BIKESHOP",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ZIONA",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "warp_id": "TBS_BIKESHOP_DOOR_INNER_1",
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_TIBERIAS",
+      "dest_warp_id": "TBS_BIKESHOP_DOOR_OUTER"
+    },
+    {
+      "warp_id": "TBS_BIKESHOP_DOOR_INNER_2",
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_TIBERIAS",
+      "dest_warp_id": "TBS_BIKESHOP_DOOR_OUTER"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

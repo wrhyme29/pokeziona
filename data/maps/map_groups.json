@@ -9,7 +9,15 @@
     "gMapGroup_Dungeons_Frlg",
     "gMapGroup_SpecialArea_Frlg",
     "gMapGroup_TownsAndRoutes_Frlg",
-    "gMapGroup_Indoors_Frlg"
+    "gMapGroup_Indoors_Frlg",
+    "gMapGroup_TownsAndRoutes",
+    "gMapGroup_IndoorKibbutz",
+    "gMapGroup_IndoorTelAviv",
+    "gMapGroup_IndoorBeach",
+    "gMapGroup_IndoorTiberias",
+    "gMapGroup_IndoorKvish3",
+    "gMapGroup_IndoorDeadSea",
+    "gMapGroup_Testing"
   ],
   "gMapGroup_TownsAndRoutes_Emerald": [
     "PetalburgCity",
@@ -965,5 +973,59 @@
     "SixIsland_WaterPath_House1_Frlg",
     "SixIsland_WaterPath_House2_Frlg",
     "SevenIsland_SevaultCanyon_House_Frlg"
+  ],
+  "gMapGroup_TownsAndRoutes": [
+    "Kibbutz",
+    "TelAviv",
+    "Beach",
+    "Haifa",
+    "CarmelCave",
+    "CarmelMountain",
+    "GolanForest",
+    "Tiberias",
+    "NorthKinneret",
+    "JordanRiver",
+    "DeadSea",
+    "JordanCave",
+    "JudeanDesert",
+    "Kvish1",
+    "Kvish2",
+    "Kvish3",
+    "Kvish4"
+  ],
+  "gMapGroup_IndoorKibbutz": [
+    "Kibbutz_PlayerHouse",
+    "Kibbutz_Barn"
+  ],
+  "gMapGroup_IndoorTelAviv": [
+    "TelAviv_Lab",
+    "TelAviv_Lab_LeftTower_1F",
+    "TelAviv_Lab_LeftTower_2F",
+    "TelAviv_Lab_RightTower_1F",
+    "TelAviv_Lab_RightTower_2F",
+    "TelAviv_Mart",
+    "TelAviv_OldTowerA_1F",
+    "TelAviv_OldTowerA_2F",
+    "TelAviv_OldTowerA_3F",
+    "TelAviv_OldTowerB_1F",
+    "TelAviv_OldTowerB_2F",
+    "TelAviv_OldTowerB_3F",
+    "TelAviv_PokemonCenter"
+  ],
+  "gMapGroup_IndoorBeach": [
+    "Beach_Shack"
+  ],
+  "gMapGroup_IndoorTiberias": [
+    "Tiberias_Bikeshop"
+  ],
+  "gMapGroup_IndoorKvish3": [
+    "Kvish3_Flowershop"
+  ],
+  "gMapGroup_IndoorDeadSea": [
+    "DeadSea_GateHouse"
+  ],
+  "gMapGroup_Testing": [
+    "Testing_DesertTiles",
+    "Testing_Stone"
   ]
 }

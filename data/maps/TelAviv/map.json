@@ -1,0 +1,72 @@
+{
+  "id": "MAP_TEL_AVIV",
+  "name": "TelAviv",
+  "layout": "LAYOUT_TEL_AVIV",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ZIONA",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_KVISH2",
+      "offset": 35,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_BEACH",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "warp_id": "TLV_LAB_DOOR_OUTER",
+      "x": 38,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV_LAB",
+      "dest_warp_id": "TLV_LAB_DOOR_INNER_1"
+    },
+    {
+      "warp_id": "TLV_PC_DOOR_OUTER",
+      "x": 25,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV_POKEMON_CENTER",
+      "dest_warp_id": "TLV_PC_DOOR_INNER_1"
+    },
+    {
+      "warp_id": "TLV_MART_DOOR_OUTER",
+      "x": 21,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV_MART",
+      "dest_warp_id": "TLV_MART_DOOR_INNER_1"
+    },
+    {
+      "warp_id": "TLV_OTA_DOOR_OUTER",
+      "x": 36,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV_OLD_TOWER_A_1F",
+      "dest_warp_id": "TLV_OTA_1F_DOOR_INNER_1"
+    },
+    {
+      "warp_id": "TLV_OTB_DOOR_OUTER",
+      "x": 42,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV_OLD_TOWER_B_1F",
+      "dest_warp_id": "TLV_OTB_1F_DOOR_INNER_1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

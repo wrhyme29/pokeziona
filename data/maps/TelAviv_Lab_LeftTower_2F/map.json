@@ -1,0 +1,43 @@
+{
+  "id": "MAP_TEL_AVIV_LAB_LEFT_TOWER_2F",
+  "name": "TelAviv_Lab_LeftTower_2F",
+  "layout": "LAYOUT_TEL_AVIV_LAB_LEFT_TOWER_2F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ZIONA",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCOTT",
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_LEFT_DOWN",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "warp_id": "TLV_LAB_LT_2F_STAIRS_DOWN",
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_TEL_AVIV_LAB_LEFT_TOWER_1F",
+      "dest_warp_id": "TLV_LAB_LT_1F_STAIRS_UP"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

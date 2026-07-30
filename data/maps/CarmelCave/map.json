@@ -1,0 +1,125 @@
+{
+  "id": "MAP_CARMEL_CAVE",
+  "name": "CarmelCave",
+  "layout": "LAYOUT_CARMEL_CAVE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ZIONA",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 25,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 6,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 34,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "warp_id": "CARMEL_CAVE_K3_EXIT",
+      "x": 7,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_KVISH3",
+      "dest_warp_id": "K3_CARMEL_CAVE_ENTRANCE"
+    },
+    {
+      "warp_id": "CARMEL_CAVE_CARMEL_MOUNTAIN_EXIT",
+      "x": 42,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_MOUNTAIN",
+      "dest_warp_id": "CARMEL_MOUNTAIN_CARMEL_CAVE_ENTRANCE"
+    },
+    {
+      "warp_id": "CARMEL_CAVE_A",
+      "x": 5,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "CARMEL_CAVE_B"
+    },
+    {
+      "warp_id": "CARMEL_CAVE_B",
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "CARMEL_CAVE_A"
+    },
+    {
+      "warp_id": "CARMEL_CAVE_C",
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "CARMEL_CAVE_CARMEL_MOUNTAIN_EXIT"
+    },
+    {
+      "warp_id": "CARMEL_CAVE_D",
+      "x": 18,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "CARMEL_CAVE_C"
+    },
+    {
+      "warp_id": "CARMEL_CAVE_E",
+      "x": 34,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "CARMEL_CAVE_F"
+    },
+    {
+      "warp_id": "CARMEL_CAVE_F",
+      "x": 31,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CARMEL_CAVE",
+      "dest_warp_id": "CARMEL_CAVE_E"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}
