@@ -408,3 +408,20 @@ const u16 gMetatiles_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_
 const u16 gMetatileAttributes_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_fame_frlg/metatile_attributes.bin");
 
 #endif // IS_FRLG
+
+// Imported Custom Tilesets for the Ziona Region
+
+const u16 gMetatiles_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/general_snow/metatiles.bin");
+const u16 gMetatileAttributes_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/general_snow/metatile_attributes.bin");
+
+const u16 gMetatiles_GeneralDesert[] = INCBIN_U16("data/tilesets/primary/general_desert/metatiles.bin");
+const u16 gMetatileAttributes_GeneralDesert[] = INCBIN_U16("data/tilesets/primary/general_desert/metatile_attributes.bin");
+
+const u16 gMetatiles_DesertVillage[] = INCBIN_U16("data/tilesets/secondary/desert_village/metatiles.bin");
+const u16 gMetatileAttributes_DesertVillage[] = INCBIN_U16("data/tilesets/secondary/desert_village/metatile_attributes.bin");
+
+const u16 gMetatiles_Desert_Buildings[] = INCBIN_U16("data/tilesets/secondary/desert_buildings/metatiles.bin");
+const u16 gMetatileAttributes_Desert_Buildings[] = INCBIN_U16("data/tilesets/secondary/desert_buildings/metatile_attributes.bin");
+
+const u16 gMetatiles_GeneralDesertRedux[] = INCBIN_U16("data/tilesets/primary/general_desert_redux/metatiles.bin");
+const u16 gMetatileAttributes_GeneralDesertRedux[] = INCBIN_U16("data/tilesets/primary/general_desert_redux/metatile_attributes.bin");

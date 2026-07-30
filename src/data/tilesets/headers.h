@@ -1541,3 +1541,60 @@ const struct Tileset gTileset_HallOfFame =
 };
 
 #endif // IS_FRLG
+
+// Imported Custom Tilesets for the Ziona Region
+
+const struct Tileset gTileset_GeneralSnow =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_GeneralSnow,
+    .palettes = gTilesetPalettes_GeneralSnow,
+    .metatiles = gMetatiles_GeneralSnow,
+    .metatileAttributes = gMetatileAttributes_GeneralSnow,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_GeneralDesert =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_GeneralDesert,
+    .palettes = gTilesetPalettes_GeneralDesert,
+    .metatiles = gMetatiles_GeneralDesert,
+    .metatileAttributes = gMetatileAttributes_GeneralDesert,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_DesertVillage =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_DesertVillage,
+    .palettes = gTilesetPalettes_DesertVillage,
+    .metatiles = gMetatiles_DesertVillage,
+    .metatileAttributes = gMetatileAttributes_DesertVillage,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Desert_Buildings =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Desert_Buildings,
+    .palettes = gTilesetPalettes_Desert_Buildings,
+    .metatiles = gMetatiles_Desert_Buildings,
+    .metatileAttributes = gMetatileAttributes_Desert_Buildings,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_GeneralDesertRedux =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_GeneralDesertRedux,
+    .palettes = gTilesetPalettes_GeneralDesertRedux,
+    .metatiles = gMetatiles_GeneralDesertRedux,
+    .metatileAttributes = gMetatileAttributes_GeneralDesertRedux,
+    .callback = NULL,
+};
