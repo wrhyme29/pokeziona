@@ -53,10 +53,10 @@
 
 // Zioni flags that don't really fit elsewhere
 
-#define FLAG_GOT_STARTER_EEVEE      0x20 
-#define FLAG_HIDE_STARTER_EEVEE_BALL    0x21 
+#define FLAG_GOT_STARTER_EEVEE                      0x20 
+#define FLAG_HIDE_STARTER_EEVEE_BALL                0x21 
+#define FLAG_RECEIVED_POKEMON_BOX_LINK_FROM_ILAN    0x22
 
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
