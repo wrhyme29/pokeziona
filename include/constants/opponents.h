@@ -4,8 +4,14 @@
 #include "constants/battle_partner.h"
 #include "constants/opponents_frlg.h"
 
+/**
+    Due to a limited amount of trainer space available,
+    we will be overriding existing trainers with our new ones
+    that are in Ziona.
+*/
+
 #define TRAINER_NONE                          0
-#define TRAINER_SAWYER_1                      1
+#define TRAINER_ASFAR_OMAR                    1
 #define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
 #define TRAINER_GRUNT_AQUA_HIDEOUT_3          4

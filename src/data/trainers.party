@@ -83,19 +83,6 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_SAWYER_1 ===
-Name: SAWYER
-Class: Hiker
-Pic: Hiker
-Gender: Male
-Music: Hiker
-Double Battle: No
-AI: Basic Trainer
-
-Geodude
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
 Name: GRUNT
 Class: Team Aqua
@@ -16877,3 +16864,26 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ASFAR_OMAR ===
+Name: OMAR
+Class: Bug Catcher
+Pic: Bug Catcher
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Will Suicide
+
+Rellor  
+Level: 6
+Ability: Shed Skin  
+- Memento  
+- Sand Attack  
+- Tackle  
+
+Pineco  
+Level: 7
+Ability: Sturdy  
+- Flail  
+- Self-Destruct  
+- Power Trick  
